@@ -18,3 +18,16 @@ margin-top: 10%;
 .customer-head{
     margin-bottom: 15%;
 }
+.customer-login-container > .otp-login-head{
+    margin-bottom: 5%;
+}
+.otp-login-head>h2{
+    font-size: xx-large;
+}
+.signup-link{
+  margin-top: 5%;
+}
+#spanText{
+   font-size: larger;
+   font-weight: bold;
+}
