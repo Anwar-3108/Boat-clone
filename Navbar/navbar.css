@@ -1,1 +1,38 @@
 /* This Page Is for CSS of navbar */
+*{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+#main div{
+    display: flex;
+}
+#main > div:nth-child(1){
+    width: 20%;
+}
+#main > div:first-child > img{
+     height: 35px;
+     cursor: pointer;
+}
+#main > div:nth-child(2){
+    width: 70%;
+    padding-right: 30%;
+}
+#main > div:nth-child(2) > p{
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    color: #3a3838;
+}
+#main > div:nth-child(3) > img{
+    height: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
