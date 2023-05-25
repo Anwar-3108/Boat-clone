@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignIn page</title>
-    <link rel="stylesheet" href="commonAuth.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
+
    <!DOCTYPE html>
 <html lang="en">
 
@@ -19,6 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp Page</title>
+    <link rel="stylesheet" href="commonAuth.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -41,31 +33,30 @@
                     <div class="customer-login-container">
 
                         <div class="otp-login-head">
-                            <h2 id="heading">LOGIN</h2>
+                            <h2 id="heading">SIGN UP</h2>
                             <div class="signup-link">
                                 <span id="spanText">
-                                    New to boAt?
-                                    <a href="signUp.html">Create an account
+                                    Already a boAthead?
+                                    <a href="signin.html">Login with your mobile number
                                     </a>
                                 </span>
                             </div>
                         </div>
 
                         <div class="otp-login-body-container">
-
                             <form >
 
-                                <div class="login-input-container">
-                                    <input type="number" name="" id="inpNum" pattern="[0-9]*" minlength="8" maxlength="10" placeholder="Mobile Number" required >
-                                </div>
-    
-                                <div class="alert-msg">
-                                    <p id="alert"></p>
-                                </div>
-    
-                                <!-- <button id="send-otp-btn">SEND OTP</button> -->
-                                <input type="submit" id="send-otp-btn" value="SEND OTP">
-                            </form>
+                            <div class="login-input-container">
+                                <input type="number" name="" id="inpNum" pattern="[0-9]*" minlength="8" maxlength="10" placeholder="Mobile Number" required >
+                            </div>
+
+                            <div class="alert-msg">
+                                <p id="alert"></p>
+                            </div>
+
+                            <!-- <button id="send-otp-btn">SEND OTP</button> -->
+                            <input type="submit" id="send-otp-btn" value="SEND OTP">
+                        </form>
                         </div>
                     </div>
                     
@@ -74,7 +65,8 @@
         </div>
     </section>
 </body>
-<script src="signin.js"></script>
+
 </html>
+<script src="signUp.js"></script>
 </body>
 </html>
