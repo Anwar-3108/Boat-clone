@@ -72,6 +72,7 @@ function display(productArray) {
         deliveryform.setAttribute("class", "deliveryForm");
 
         var deliveryText = document.createElement("p");
+        deliveryText.setAttribute("class", "deliveryText");
         deliveryText.textContent = "Delivery:";
 
         var deliveryInput = document.createElement("input");
