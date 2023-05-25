@@ -1,0 +1,33 @@
+#main1{
+    margin: 15px 20px;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: nowrap;
+}
+
+#main > span{
+    font-weight: bold;
+}
+#main> span > span{
+    text-decoration: underline 2px solid red;
+    
+}
+#main1 > div{
+    width: 23%;
+    margin: auto;
+    border-radius: 10px;
+}
+#main1 > div > video{
+    width: 100%;
+    border-radius: 10px;
+}
+#main1 > div > p{
+    
+}
+#main{
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+}

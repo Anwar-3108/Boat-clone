@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flexbox - No Wrap</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .parent {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.child {
+  width: 5000px;
+  height: 100px;
+  margin: 10px;
+  background-color: lightblue;
+}
+
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child">Child 1</div>
+    <div class="child">Child 2</div>
+    <div class="child">Child 3</div>
+    <div class="child">Child 4</div>
+    <div class="child">Child 5</div>
+    <div class="child">Child 6</div>
+  </div>
+</body>
+</html>
