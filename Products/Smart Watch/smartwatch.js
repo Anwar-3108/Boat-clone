@@ -271,7 +271,7 @@ function addToCart(product) {
 
 
 function openProductPage(element) {
-    window.location.href = "product" + element.id + ".html";
+    window.location.href = "product" +airdopes121.html;
 }
 
 
