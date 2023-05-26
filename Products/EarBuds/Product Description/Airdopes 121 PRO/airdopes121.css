@@ -191,7 +191,9 @@ cursor: pointer;
   width: 70%;
   margin-left: 100px;
 }
-
+.belowcart {
+  margin:-10px;
+}
 .Div4 {
   display: flex;
   justify-content: center;
@@ -202,6 +204,7 @@ cursor: pointer;
 
 #firstbox {
   background-color: #e4e4e4;
+  padding: 10px;
 }
 
 #firstbox img {
@@ -210,10 +213,13 @@ cursor: pointer;
 
 #secondbox {
   background-color:#b6ceee;
+  padding: 10px;
+  
 }
 
 #secondbox>img {
-  width: 86%
+  width:87%;
+  
 }
 
 .textBox>div>div>img {
@@ -221,6 +227,7 @@ cursor: pointer;
 }
 
 /*  Below product details and description*/
+
 .policy {
   display: flex;
   justify-content: space-evenly;
@@ -259,6 +266,10 @@ cursor: pointer;
   padding: 10px 10% 10px 10%;
 
 }
+.description > h1 {
+ font-size: 40px; 
+ font-weight: 800;
+}
 
 .description > p {
   margin: 30px 0px 20px 0;
@@ -279,6 +290,7 @@ cursor: pointer;
 
 .Div1 > div > img {
   width: 100%;
+  margin-left: -10%;
 }
 
 
@@ -355,13 +367,13 @@ h4 {
    width: 100%;
    height: 100%;
    margin: auto;
-   margin-top: 110%;
+   margin-top: 140%;
    
   }
 
   
   .textBox {
-    margin-top: 160%;
+    margin-top: 190%;
     width: 100%;
     text-align: center;
     padding: 20px;
@@ -397,10 +409,27 @@ h4 {
   }
   .priceBox {
     margin-top: -20px;
-    justify-content: center;
+    margin-bottom: -5%;
+  }
+  .discount{
+    font-size: 18px;
+    color: #09c890;
+  }
+  .strikedoff{
+    font-size: 16px;
+     color: grey;
+     text-decoration: line-through;
+  }
+  .price{
+    font-size: 20px;
   }
   .quantity-box{
     justify-content: center;
+    margin-top: -5%;
+  }
+
+  .add-to-cart-button {
+    margin-top: -5%;
   }
   
 
@@ -410,7 +439,7 @@ h4 {
   .belowcart {
    
     margin:-10px;
-    margin-top: 120%;
+    margin-top: 140%;
   }
   .policytext {
     display: none;
@@ -425,6 +454,31 @@ h4 {
     color: white;
     font-size: small;
   }
+
+  .description > h1{
+    font-size: 20px;
+  }
+    .description > p{
+      font-size: 14px;
+  }
+
+  .Div1{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .Div1 > div {
+   width: 100%;
+   padding: 10px;
+  }
+  .Div1 > div >h1,p {
+    padding: 10px;
+   }
+
+   .Div1 > div >img  {
+   width: 100%;
+   margin: auto;
+   }
 
   .Div4 {
     display: flex;
@@ -441,6 +495,13 @@ h4 {
     margin: auto;
     text-align: center;
   }
+  .Div9 > div {
+    padding: 5px;
+    text-align: left;
+  }
+  .Div9 > div > h1 {
+    padding: 5px;
+  }
 
   #firstbox {
     background-color: #e4e4e4;
@@ -451,7 +512,7 @@ h4 {
   }
   
   #firstbox img {
-    width: 70%;
+    width: 79%;
   }
   
   #secondbox {
@@ -461,7 +522,7 @@ h4 {
     
   }
   #secondbox>img {
-    width: 86%
+    width: 82%
   }
   
   .blogboxMain {

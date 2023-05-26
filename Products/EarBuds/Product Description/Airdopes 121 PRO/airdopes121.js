@@ -27,7 +27,7 @@ function display(productArray) {
         name.textContent = elem.name + "|";
         var details = document.createElement("span");
         details.setAttribute("class", "descriptiontext");
-        details.textContent = " Wireless Earbuds with 8mm drivers, Upto 42 Hours Playback, ENx™ Technology, IPX4 Water Resistance";
+        details.textContent = " Wireless Earbuds with 10mm Dynamic Drivers, ASAP™️ Charge, ENx™️ Technology, Easy Touch Control";
         name.appendChild(details);
         var rating = document.createElement("p");
         rating.setAttribute("class", "rating");
