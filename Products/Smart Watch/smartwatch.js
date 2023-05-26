@@ -246,28 +246,27 @@ function displayearBuds() {
         document.getElementById("mainBox").appendChild(div);
     });
 }
-    function addToCart(product) {
-        var cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
-        var existingProduct = cartProducts.find(function (p) {
-            return p.name === product.name;
-        });
-
-        if (existingProduct) {
-            existingProduct.quantity += 1;
-            existingProduct.price += product.price * product.quantity;
-        } else {
-            var newProduct = {
-                image: product.image_url,
-                name: product.name,
-                price: (product.price),
-                quantity: 1
-            };
-            cartProducts.push(newProduct);
-        }
-
-        localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
-
+function addToCart(product) {
+    var cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
+    var existingProduct = cartProducts.find(function (p) {
+      return p.name === product.name;
+    });
+  
+    if (existingProduct) {
+      existingProduct.quantity += 1;
+      existingProduct.price = parseInt(product.price) * existingProduct.quantity;
+    } else {
+      var newProduct = {
+        image: product.image_url,
+        name: product.name,
+        price: parseInt(product.price),
+        quantity: 1,
+      };
+      cartProducts.push(newProduct);
     }
+  
+    localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
+  }
 
 
 
