@@ -4,11 +4,12 @@ var earbuds = [
         image: "Images/boAt Airdopes 413 ANC.webp",
         alt: "boAt Airdopes 413 ANC",
         name: "Airdopes 413 ANC",
-        rating: "5",
+        rating: "5.0",
         price: 1999,
         strikedoffprice: "₹4,990.00",
         discount: "60% off",
-        functions: "Product functions..."
+        highlight1: "ASAP™ Charge",
+        highlight2: "IWP Technology",
     },
     {
         id: 2,
@@ -19,7 +20,8 @@ var earbuds = [
         price: 1499,
         strikedoffprice: "₹3,490.00",
         discount: "57% off",
-        functions: "Product functions..."
+        highlight1: "Clear Calling ",
+        highlight2: "ASAP™ Charge ",
     },
     {
         id: 3,
@@ -30,18 +32,20 @@ var earbuds = [
         price: 1499,
         strikedoffprice: "₹2,990.00",
         discount: "49% off",
-        functions: "Product functions..."
+        highlight1: "13mm drivers",
+        highlight2: "Clear Calling",
     },
     {
         id: 4,
         image: "Images/boAt-Airdopes-501-ANC.webp",
         alt: "boAt-Airdopes-501-ANC",
         name: "Airdopes 501 ANC",
-        rating: "5",
+        rating: "5.0",
         price: 4990,
         strikedoffprice: "₹9,990.00",
         discount: "80% off",
-        functions: "Product functions..."
+        highlight1: "BEAST™ Mode",
+        highlight2: "ASAP™ Charge",
     },
     {
         id: 6,
@@ -52,18 +56,20 @@ var earbuds = [
         price: 1399,
         strikedoffprice: "₹4,990.00",
         discount: "68% off",
-        functions: "Product functions..."
+        highlight1: "ENx™ Technology ",
+        highlight2: "ASAP™ Fast Charge"
     },
     {
         id: 7,
         image: "Images/Airdopes-393-ANC.webp",
         alt: "Airdopes-393-ANC",
         name: "Airdopes 393 ANC",
-        rating: "5",
+        rating: "5.0",
         price: 2999,
         strikedoffprice: "₹4,990.00",
         discount: "39% off",
-        functions: "Product functions..."
+        highlight1: "BEAST™ Mode",
+        highlight2: "ASAP™ Charge"
     },
     {
         id: 8,
@@ -74,7 +80,8 @@ var earbuds = [
         price: 1099,
         strikedoffprice: "₹2,490.00",
         discount: "55% off",
-        functions: "Product functions..."
+        highlight1: "13mm drivers",
+        highlight2: "Clear Calling",
     },
     {
         id: 9,
@@ -85,7 +92,8 @@ var earbuds = [
         price: 1999,
         strikedoffprice: "₹3,490.00",
         discount: "42% off",
-        functions: "Product functions..."
+        highlight1: "10mm drivers",
+        highlight2: "Clear Calling"
     },
     {
         image: "Images/Airdopes 411 ANC.webp",
@@ -95,7 +103,8 @@ var earbuds = [
         price: 2499,
         strikedoffprice: "₹4,990.00",
         discount: "49% off",
-        functions: "Product functions..."
+        highlight1: "13mm drivers",
+        highlight2: "Boat Surround",
     },
     {
         id: 10,
@@ -106,7 +115,8 @@ var earbuds = [
         price: 1499,
         strikedoffprice: "₹2,990.00",
         discount: "49% off",
-        functions: "Product functions..."
+        highlight1: "boAt Immersive Sound ",
+        highlight2: "Up to 90HRS Playback "
     },
     {
         id: 11,
@@ -117,7 +127,8 @@ var earbuds = [
         price: 1199,
         strikedoffprice: "₹2,490.00",
         discount: "60% off",
-        functions: "Product functions..."
+        highlight1: "boAt Sorrounding Sound",
+        highlight2: "LED Battery Case "
     },
 
     {
@@ -129,7 +140,8 @@ var earbuds = [
         price: 1399,
         strikedoffprice: "₹2,490.00",
         discount: "43% off",
-        functions: "Product functions..."
+        highlight1: "ENx™ Technology ",
+        highlight2: "Up to 40HRS Playback "
     },
     {
         id: 14,
@@ -140,10 +152,12 @@ var earbuds = [
         price: 1799,
         strikedoffprice: "₹3,490.00",
         discount: "48% off",
-        functions: "Product functions..."
+        highlight1: "Up to 30HRS Playback ",
+        highlight2: "LED Battery Case "
     },
 
 ];
+
 
 
 displayearBuds();
@@ -196,8 +210,18 @@ function displayearBuds() {
         var cartbox = document.createElement("div");
         cartbox.className = "cartbox"
 
-        var highlight = document.createElement("p");
-        highlight.textContent = element.functions;
+        var highlightbox = document.createElement("div");
+        highlightbox.className = "highlightbox";
+        var highlight1 = document.createElement("p");
+        highlight1.className = "highlight1";
+        highlight1.textContent = element.highlight1;
+
+
+        var highlight2 = document.createElement("p");
+        highlight2.className = "highlight2";
+        highlight2.textContent = element.highlight2;
+
+
 
         var cart = document.createElement("button");
         cart.textContent = "Add to cart";
@@ -209,9 +233,9 @@ function displayearBuds() {
         });
 
 
-
+        highlightbox.append(highlight1, highlight2)
         priceBox.append(price, strikedoffprice, discount);
-        cartbox.append(highlight, cart);
+        cartbox.append(highlightbox, cart);
         productdatabox.append(rating, name, priceBox, cartbox);
 
 
@@ -221,7 +245,7 @@ function displayearBuds() {
 
         document.getElementById("mainBox").appendChild(div);
     });
-
+}
     function addToCart(product) {
         var cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
         var existingProduct = cartProducts.find(function (p) {
@@ -230,7 +254,7 @@ function displayearBuds() {
 
         if (existingProduct) {
             existingProduct.quantity += 1;
-            existingProduct.price += product.price * product.quantity; 
+            existingProduct.price += product.price * product.quantity;
         } else {
             var newProduct = {
                 image: product.image_url,
@@ -245,11 +269,12 @@ function displayearBuds() {
 
     }
 
-}
+
 
 function openProductPage(element) {
     window.location.href = "product" + element.id + ".html";
 }
+
 
 
 

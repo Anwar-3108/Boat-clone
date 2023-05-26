@@ -94,6 +94,7 @@ margin-top: 50px;
   
 }
 .deliveryForm {
+  display: flex;
 align-items: center;
 gap: 5px;
 margin: 10px;
@@ -354,6 +355,7 @@ h4 {
 }
 
 
+
 @media only screen and (min-width: 320px) and (max-width: 599px) {
   .innercontainer {
     flex-direction: column;
@@ -395,6 +397,7 @@ h4 {
    
   }
   .deliveryForm {
+    flex-direction: column;
   margin: auto;
   
   }
@@ -582,6 +585,7 @@ h4 {
    
   }
   .deliveryForm {
+    flex-direction: column;
   margin: auto;
   
   }

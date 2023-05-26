@@ -33,8 +33,7 @@ function display(productArray) {
         rating.setAttribute("class", "rating");
         
         var starIcon = document.createElement("span");
-        starIcon.innerHTML = "&#9733;"; // Unicode for star symbol
-        
+        starIcon.textContent = "★";
         rating.appendChild(starIcon);
         rating.textContent += " " + elem.rating;
 
