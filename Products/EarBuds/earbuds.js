@@ -272,5 +272,3 @@ function openProductPage(element) {
     window.location.href = "product" + element.id + ".html";
 }
 
-
-
