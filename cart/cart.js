@@ -1,7 +1,7 @@
 document.querySelector("button").addEventListener("click", check);
 var cart = JSON.parse(localStorage.getItem("cartProducts")) || [];
 
-function getPrdouctCard(productName, productQty, productPrice, discountPrice, productImage, index) {
+function getPrdouctCard(productName, productQty, discountPrice, productImage, index) {
   return `
   <div style="border-radius: 10px; border: 1px solid rgb(0 19 37 / 8%); margin: 15px;">
         <div style="display: flex; justify-content: space-between; padding: 10px;">
@@ -32,7 +32,7 @@ function getPrdouctCard(productName, productQty, productPrice, discountPrice, pr
             </span>
           </div>
           <div style="color: rgb(0, 19, 37); font-size: 16px; font-weight: 600;">
-            <span class="productPrice"  style="color: rgb(118, 146, 173);"><del>₹${productPrice}</del></span> <span class="discountPrice">₹${discountPrice}</span>
+             <span class="discountPrice">₹${discountPrice}</span>
           </div>
         </div>
         </div>
@@ -43,7 +43,14 @@ const couponHTML = `
 <div id="Offer">    
       <div style="text-align: center;">
         <div id="trp">
-          <p> Coupons <i class="fa fa-info-circle"></i></p>
+          <p> Coupons </p>
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 28 28"> 
+          <g id="Group_334290" data-name="Group 334290" transform="translate(7899 572)">
+            <rect id="Rectangle_114329" data-name="Rectangle 114329" width="28" height="28" transform="translate(-7899 -572)" fill="none"></rect>
+            <path id="Union_39" data-name="Union 39" d="M1254.15-20139.615l-.511-.6a1.267,1.267,0,0,0-1.245-.4l-.764.182a2.748,2.748,0,0,1-3.38-2.453l-.061-.785a1.243,1.243,0,0,0-.769-1.053l-.724-.3a2.748,2.748,0,0,1-1.29-3.973l.41-.674a1.259,1.259,0,0,0,0-1.3l-.41-.668a2.747,2.747,0,0,1,1.29-3.973l.724-.3a1.244,1.244,0,0,0,.769-1.059l.061-.783a2.755,2.755,0,0,1,3.38-2.455l.764.182a1.256,1.256,0,0,0,1.245-.4l.511-.6a2.747,2.747,0,0,1,4.18,0l.506.6a1.259,1.259,0,0,0,1.245.4l.764-.182a2.755,2.755,0,0,1,3.38,2.455l.061.783a1.244,1.244,0,0,0,.769,1.059l.724.3a2.747,2.747,0,0,1,1.29,3.973l-.41.668a1.259,1.259,0,0,0,0,1.3l.41.674a2.748,2.748,0,0,1-1.29,3.973l-.724.3a1.243,1.243,0,0,0-.769,1.053l-.061.785a2.748,2.748,0,0,1-3.38,2.453l-.764-.182a1.271,1.271,0,0,0-1.245.4l-.506.6a2.735,2.735,0,0,1-2.09.963A2.736,2.736,0,0,1,1254.15-20139.615Zm.627-1.574.511.6a1.244,1.244,0,0,0,1.9,0l.511-.6a2.756,2.756,0,0,1,2.732-.885l.764.182a1.245,1.245,0,0,0,1.533-1.113l.066-.785a2.738,2.738,0,0,1,1.685-2.322l.724-.3a1.246,1.246,0,0,0,.587-1.807l-.41-.668a2.759,2.759,0,0,1,0-2.869l.41-.674a1.248,1.248,0,0,0-.587-1.807l-.724-.3a2.753,2.753,0,0,1-1.685-2.324l-.066-.783a1.252,1.252,0,0,0-1.533-1.119l-.764.188a2.759,2.759,0,0,1-2.732-.891l-.511-.6a1.249,1.249,0,0,0-1.9,0l-.511.6a2.754,2.754,0,0,1-2.727.891l-.764-.187a1.254,1.254,0,0,0-1.538,1.119l-.061.783a2.777,2.777,0,0,1-1.69,2.324l-.724.3a1.251,1.251,0,0,0-.587,1.807l.41.674a2.759,2.759,0,0,1,0,2.869l-.41.668a1.25,1.25,0,0,0,.587,1.807l.724.3a2.761,2.761,0,0,1,1.69,2.322l.061.785a1.247,1.247,0,0,0,1.538,1.113l.764-.182a2.733,2.733,0,0,1,.638-.076A2.752,2.752,0,0,1,1254.777-20141.189Zm-2.07-5.607a.744.744,0,0,1,0-1.057l6-6a.746.746,0,0,1,1.058,0,.746.746,0,0,1,0,1.059l-6,6a.73.73,0,0,1-.527.221A.742.742,0,0,1,1252.708-20146.8Zm5.677-1.031a1,1,0,0,1,1-1,1,1,0,0,1,1,1,1,1,0,0,1-1,1A1,1,0,0,1,1258.385-20147.828Zm-6-5a1,1,0,0,1,1-1,1,1,0,0,1,1,1,1,1,0,0,1-1,1A1,1,0,0,1,1252.384-20152.828Z" transform="translate(-9141.001 19591.826)" fill="#1A2024" stroke="#000000" stroke-miterlimit="10" stroke-width="1" stroke-opacity="0"></path>
+          </g>
+        </svg>
+        </svg>
         </div>
         <input placeholder="Enter Coupon Code" type="text" id="promo">
         <button onclick="check()">Apply</button>
@@ -64,20 +71,17 @@ function updateQty(event, position) {
   caltotal(cart);
   displayCartItemsCount(cart);
 }
-// var itemscount = localStorage.getItem("countitem")
-// function displayCartItemsCount(cart) {
-//   var cartItemsCount = cart && cart.length;
-//   var cartCountValue = "";
-//   if (cartItemsCount === 1) {
-//     cartCountValue = " 1 item";
-
-    var itemscount = localStorage.getItem("countitem")
+var itemscount = localStorage.getItem("countitem")
 function displayCartItemsCount(cart) {
   var cartItemsCount = cart && cart.length;
-  var cartCountValue = "• No item";
-  if (cartItemsCount === 1) {
-    cartCountValue = " 1 item";
+  var cartCountValue = "";
 
+   if  (cartItemsCount === 0) {
+    cartCountValue = "• No item";
+  }
+
+  else if  (cartItemsCount === 1) {
+    cartCountValue = " 1 item";
 
   } else if (cartItemsCount > 1) {
     cartCountValue = " " + cartItemsCount + " items";
@@ -86,10 +90,13 @@ function displayCartItemsCount(cart) {
   document.getElementById("per").innerHTML = cartCountValue;
   localStorage.setItem("countitem", cartCountValue)
 }
+
+
+
 function displayCart(cart) {
   document.querySelector("#bagItems").innerHTML = "";
   cart.map(function (elem, index) {
-    var card = getPrdouctCard(elem.name, elem.productQty || 1, elem.MRP, elem.price, elem.image_url, index);
+    var card = getPrdouctCard(elem.name, elem.productQty || 1, elem.price, elem.image, index);
     var div = document.createElement("div");
     div.innerHTML = card;
     document.querySelector("#bagItems").append(div);
@@ -111,6 +118,7 @@ function delrow(index) {
   if (cart.length === 0) {
     document.getElementById("grandTotalParent").style.display = "none";
     document.getElementById("child").style.display = "block";
+    document.getElementById("pngImage").style.display = "none";
     var offerElement = document.getElementById("Offer");
     if (offerElement)
       offerElement.style.display = "none";
@@ -129,54 +137,63 @@ function caltotal() {
 
 }
 
-
 function check() {
   var cart = JSON.parse(localStorage.getItem("cartProducts")) || [];
   var total = 0;
   cart.forEach((item) => {
     total = total + Number(item.price);
   });
+
+  //------------------------------------------------------------------------- for  discount------------------------------------------------------------------------------------------ 
+
   var ch = document.getElementById("promo").value;
-  if (ch == "makeup0" || ch == "kratika98" || ch == "makeup30" || ch == "krati98") {
+  if (ch == "kratika98") {
     var temp = document.createElement("p");
     temp.setAttribute("class", "krp");
-    alert(temp = " 30% off applied");
-    //  document.getElementById("Offer").append(temp);
+
+    alert(temp = " 25% off applied");
+
     var change = (total * 3) / 10;
     document.getElementById("grandTotalPrice").textContent = total - change;
   }
 }
 
-// for calling cart
-function showNykkaCart() {
+//------------------------------------------------------------------------------ for calling cart---------------------------------------------------------------------------------------------------------------------------------------------------------------
+function showBoatCart() {
   var cart = JSON.parse(localStorage.getItem("cartProducts")) || [];
   var offerElement = document.getElementById("Offer");
   if (cart && cart.length > 0) {
     document.getElementById("child").style.display = "none";
     document.getElementById("grandTotalParent").style.display = "block";
+    document.getElementById("pngImage").style.display = "block";
+   
     if (offerElement)
       document.getElementById("Offer").style.display = "block";
   } else {
     document.getElementById("grandTotalParent").style.display = "none";
     document.getElementById("child").style.display = "block";
+    document.getElementById("pngImage").style.display = "none";
+
     if (offerElement)
       document.getElementById("Offer").style.display = "none";
+      document.getElementById("pngImage").style.display = "none";
   }
-  var cartelements = document.getElementsByClassName("nykkacart");
+  var cartelements = document.getElementsByClassName("boatcart");
   for (let i = 0; i < cartelements.length; i++) {
     var element = cartelements[i];
     if (element.style.display === "block") {
       element.style.display = "none";
-      document.querySelector(".nykaacartinnerdiv").style.display = "none";
+      document.querySelector(".boaatcartinnerdiv").style.display = "none";
     } else {
       displayCartItemsCount(cart);
       caltotal(cart)
       displayCart(cart);
       element.style.display = "block";
-      if (element.id === "nykaacartdiv") {
+
+      if (element.id === "boaatcartdiv") {
         setTimeout(() => {
-          document.querySelector(".nykaacartinnerdiv").style.display = "block";
-        }, 1000);
+          document.querySelector(".boaatcartinnerdiv").style.display = "block";
+        }, 10);
       }
     }
   };

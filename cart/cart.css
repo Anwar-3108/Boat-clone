@@ -7,9 +7,10 @@
    font-size: 16px;
 }
 
-.yourcart {
-   
-   font-size: 20px;  font-weight: 600; font-family: sans-serif;   margin: 25px ; color: rgb(43, 43, 43);
+#per {
+   font-size: 20px;
+   color:#1a2024;
+   font-weight: bold;
 }
 
 .parent h2 {
@@ -34,11 +35,10 @@
 
 #child {
    text-align: center;
+
+
 }
 
-#child>p{
-   margin-top: 17px;
-}
 #child>h2 {
    font-size: 50px;
    color: rgb(51, 63, 72);
@@ -94,8 +94,12 @@
    box-shadow: rgba(236, 134, 178, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
    margin-bottom: 20px;
    border-radius: 2px;
-   border: 5pxs solid rgb(43, 43, 43)rgb(43, 43, 43)d;
+   border: 5pxs solid rgb(77, 75, 75);
 
+}
+
+.trp{
+   color: #d20c62;
 }
 
 #cartprod>img {
@@ -120,7 +124,7 @@
 }
 
 #btn {
-   background-color: rgb(43, 43, 43);
+   background-color:#1a2024;
    color: black;
    border: none;
 
@@ -165,17 +169,17 @@
 
 #Offer>div>p {
    font-family: Inter, Roboto, Arial, Helvetica, sans-serif;
-   color: rgb(43, 43, 43);
+   color: #1a2024;
    font-size: 20px;
    text-align: center;
 }
 
 #Offer>div>button {
-   background-color: rgb(43, 43, 43);
+   background-color:#1a2024;
    color: rgb(252, 251, 251);
    font-family: sans-serif;
    padding: 10px;
-   border: 1px solid rgb(43, 43, 43);
+   border: 1px solid#1a2024;
    border-radius: 5px;
    cursor: pointer;
 }
@@ -185,7 +189,7 @@
    display: block;
    margin: auto;
    color: whitesmoke;
-   background-color: rgb(43, 43, 43);
+   background-color:#1a2024;
    border: none;
    width: 180px;
    height: 60px;
@@ -215,7 +219,7 @@
 }
 
 #trp>p {
-   color: rgb(43, 43, 43);
+   color:#1a2024;
 }
 
 #trp img {
@@ -227,7 +231,7 @@
    text-decoration: none;
 }
 
-.nykkacart {
+.boatcart {
    display: none;
 }
 
@@ -238,7 +242,7 @@
 
 }
 
-.nykaaoverlay {
+.boaatoverlay {
    position: fixed;
    width: 100vw;
    height: 100vh;
@@ -248,7 +252,7 @@
    left: 0;
 }
 
-.nykaacartdiv {
+.boaatcartdiv {
    position: fixed;
    top: 0;
    right: 0;
@@ -256,20 +260,17 @@
    z-index: 100;
    width: 400px;
    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 30px 6px;
-   
+  
 }
-
-.nykaacartinnerdiv {
+.boaatcartinnerdiv {
    display: none;
    background-color: white;
    height: 100vh;
 }
-
 .emptycartimage {
    width: 200px;
-   margin-top: 180px;
+   margin-top: 50px;
 }
-
 #grandTotalParent {
    position: absolute;
    bottom: 0;
@@ -287,3 +288,4 @@
    overflow-x: hidden;
    overflow-y: auto;
 }
+
