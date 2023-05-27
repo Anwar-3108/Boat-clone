@@ -1,6 +1,7 @@
 document.querySelector("button").addEventListener("click", check);
 var cart = JSON.parse(localStorage.getItem("cartProducts")) || [];
 
+
 function getPrdouctCard(productName, productQty, discountPrice, productImage, index) {
   return `
   <div style="border-radius: 10px; border: 1px solid rgb(0 19 37 / 8%); margin: 15px;">
