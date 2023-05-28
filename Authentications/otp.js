@@ -1,11 +1,11 @@
 
     var otpTimer;
-var timeLeft = 10; // Time limit in seconds
+var timeLeft = 30; // Time limit in seconds
 
 document.getElementById("send-otp-btn").addEventListener("click", function() {
     event.preventDefault() ;
   var enteredOTP = document.getElementById("inpNum").value;
-  var generatedOTP = "123"; // Replace with the actual OTP sent to the user
+  var generatedOTP = "123456"; // Replace with the actual OTP sent to the user
 
   if (enteredOTP === generatedOTP) {
     stopTimer();
@@ -39,7 +39,7 @@ startTimer();
 
 
 function resendOtp(){
-  
+  window.location.reload();
 }
 
 

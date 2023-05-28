@@ -38,16 +38,28 @@ justify-content: center;
     /* height: 300px; */
     margin-left: 27%;
     /* margin-top: 10%; */
+    font-size: medium;
+}
+
+
+    .waiting_div{
+        max-width: 1000px;
+        display: block;
+    }
 </style>
 
 <body>
-    <div class="waitingImg">
-        <img src="./asset/wait.png" alt="">
-    </div>
-    <div class="timer">
-        <h3 id="timer"></h3>
+    <div class="waiting_div">
+        <div class="waitingImg">
+            <img src="./asset/wait.png" alt="">
+        </div>
+        <div class="timer">
+            <h3 id="timer"></h3>
+    
+        </div>
 
     </div>
+   
 
 </body>
 </html>
@@ -68,7 +80,7 @@ function startTimer() {
 }
 
  let redirect = setTimeout(() => {
-    window.location.href="home.html"
+    /* window.location.href="home.html" */
  }, 5000);
 
 startTimer();

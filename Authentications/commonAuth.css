@@ -145,13 +145,20 @@ cursor: pointer;
 display: flex;
 }
 .resend-code-btn{
-margin-left: 28%;
+margin-left: 50%;
+/* font-size: larger; */
 }
 .otpPolicy{
     margin-top: 5%;
 }
 
-
+.resend{
+    color: #ed1c24;
+    font-size: larger;
+}
+.drc{
+    font-size: larger;
+}
 
 
 
