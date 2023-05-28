@@ -26,6 +26,8 @@ var earbuds = [
     {
         id: 3,
         image: "Images/boAt-Airdopes-121-PRO.webp",
+        cartImage: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/grey_916612cd-a8da-408e-8ec6-b177df5fa727_1_800x.png?v=1658150489",
+
         alt: "boAt-Airdopes-121-PRO",
         name: "Airdopes 121 PRO",
         rating: "4.9",
@@ -247,25 +249,27 @@ function displayearBuds() {
 }
 function addToCart(product) {
     var cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
-    var existingProduct = cartProducts.find(function (p) {
-      return p.name === product.name;
+    var existingProductIndex = cartProducts.findIndex(function (p) {
+        return p.id === product.id;
     });
-  
-    if (existingProduct) {
-      existingProduct.quantity += 1;
-      existingProduct.price = parseInt(product.price) * existingProduct.quantity;
+
+    if (existingProductIndex !== -1) {
+        var existingProduct = cartProducts[existingProductIndex];
+        existingProduct.quantity += 1;
+        existingProduct.price = parseInt(product.price) * existingProduct.quantity;
     } else {
-      var newProduct = {
-        image: product.image_url,
-        name: product.name,
-        price: parseInt(product.price),
-        quantity:1,
-      };
-      cartProducts.push(newProduct);
+        var newProduct = {
+            id: product.id,
+            image: product.cartImage,
+            name: product.name,
+            price: parseInt(product.price),
+            quantity: 1,
+        };
+        cartProducts.push(newProduct);
     }
-  
+
     localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
-  }
+}
 
 
 function openProductPage(element) {

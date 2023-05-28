@@ -14,6 +14,7 @@ var earbuds = [
     {
         id: 12,
         image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Lunar_Call_Pro.jpg?v=1682408982",
+        cartImage: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bla_800x.png?v=1679660395",
         alt: "Lunar Call Pro",
         name: "Lunar Call Pro",
         rating: "4.7",
@@ -248,25 +249,27 @@ function displayearBuds() {
 }
 function addToCart(product) {
     var cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
-    var existingProduct = cartProducts.find(function (p) {
-      return p.name === product.name;
+    var existingProductIndex = cartProducts.findIndex(function (p) {
+        return p.id === product.id;
     });
-  
-    if (existingProduct) {
-      existingProduct.quantity += 1;
-      existingProduct.price = parseInt(product.price) * existingProduct.quantity;
+
+    if (existingProductIndex !== -1) {
+        var existingProduct = cartProducts[existingProductIndex];
+        existingProduct.quantity += 1;
+        existingProduct.price = parseInt(product.price) * existingProduct.quantity;
     } else {
-      var newProduct = {
-        image: product.image_url,
-        name: product.name,
-        price: parseInt(product.price),
-        quantity: 1,
-      };
-      cartProducts.push(newProduct);
+        var newProduct = {
+            id: product.id,
+            image: product.cartImage,
+            name: product.name,
+            price: parseInt(product.price),
+            quantity: 1,
+        };
+        cartProducts.push(newProduct);
     }
-  
+
     localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
-  }
+}
 
 
 
