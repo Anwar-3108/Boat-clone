@@ -2,7 +2,9 @@ let productArray = []
 creating(productArray);
 function creating(productArray) {
     let obj = {
+        id:12,
         image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/c2386af9-4349-432f-8ba5-2b6aa06025c8_600x.png?v=1668756103",
+        cartImage: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/bla_800x.png?v=1679660395",
         name: "boAt Lunar Call Pro ",
         price: 4299,
         strikedoff: "6900.00",
@@ -215,25 +217,27 @@ function updateQuantity(change) {
 
 function addToCart(elem) {
     var cartList = JSON.parse(localStorage.getItem("cartProducts")) || [];
-    var existingItem = cartList.find(item => item.name === elem.name);
-
+    var existingItem = cartList.find((item) => item.id === elem.id);
+  
     var quantityDisplay = document.querySelector(".quantity-display");
     var quantity = parseInt(quantityDisplay.textContent);
-
+  
     if (existingItem) {
-        // If the product already exists in the cart, increase the quantity and update the total price
-        existingItem.quantity += quantity;
-        existingItem.price += elem.price * quantity;
+      // If the product already exists in the cart, increase the quantity and update the total price
+      existingItem.quantity += quantity;
+      existingItem.price += elem.price * quantity;
     } else {
-        // If the product is not in the cart, create a new object with the required properties
-        var newCartItem = {
-            name: elem.name,
-            price: elem.price,
-            quantity: quantity
-        };
-
-        cartList.push(newCartItem);
+      // If the product is not in the cart, create a new object with the required properties
+      var newCartItem = {
+        id: elem.id,
+        image: elem.cartImage,
+        price: elem.price * quantity,
+        quantity: quantity,
+      };
+  
+      cartList.push(newCartItem);
     }
-
+  
     localStorage.setItem("cartProducts", JSON.stringify(cartList));
-}   
+  }
+  

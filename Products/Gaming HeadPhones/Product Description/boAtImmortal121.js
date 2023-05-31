@@ -2,14 +2,14 @@ let productArray = []
 creating(productArray);
 function creating(productArray) {
     let obj = {
-        id:3,
-        image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/c2386af9-4349-432f-8ba5-2b6aa06025c8_600x.png?v=1668756103",
-        cartImage: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/grey_916612cd-a8da-408e-8ec6-b177df5fa727_1_800x.png?v=1658150489",
-        name: "boAt Airdopes 121 PRO ",
-        price: 1499,
-        strikedoff: 6900,
-        discount: "80% off",
-        rating: 4.6,
+        id: 31,
+        image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IMT121-bl_600x.png?v=1670595117",
+        cartImage:  "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IMT121-bl_600x.png?v=1670595117",
+        name: "boAt Immortal 121",
+        price: 1699,
+        strikedoff: "3490.00",
+        discount: "51% off",
+        rating: 4.8,
     }
 
     productArray.push(obj);
@@ -29,7 +29,7 @@ function display(productArray) {
         name.textContent = elem.name + "|";
         var details = document.createElement("span");
         details.setAttribute("class", "descriptiontext");
-        details.textContent = " Wireless Earbuds with 10mm Dynamic Drivers, ASAP™️ Charge, ENx™️ Technology, Easy Touch Control";
+        details.textContent = "  Bluetooth Gaming Wireless Earbuds with BEAST™️ Mode (40ms Low Latency), ASAP™️ Charge, 40 Hours Playback, & Blazing RGB Lights";
         name.appendChild(details);
         var rating = document.createElement("p");
         rating.setAttribute("class", "rating");
@@ -41,7 +41,7 @@ function display(productArray) {
 
         var reviews = document.createElement("span");
         reviews.setAttribute("class", "reviews");
-        reviews.textContent = "40 reviews";
+        reviews.textContent = "36 reviews";
 
         var separator = document.createElement("span");
         separator.textContent = " | ";
@@ -240,3 +240,4 @@ function addToCart(elem) {
   
     localStorage.setItem("cartProducts", JSON.stringify(cartList));
   }
+  

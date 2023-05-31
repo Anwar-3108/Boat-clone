@@ -2,6 +2,7 @@ var earbuds = [
     {
         id: 31,
         image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/ezgif-1-6381642bb4.gif?v=1685013470",
+        cartImage: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IMT121-bl_600x.png?v=1670595117",
         alt: "Immortal 121",
         name: "Immortal 121",
         rating: "4.8",
@@ -95,8 +96,8 @@ var earbuds = [
         highlight1: "Up to 40HRS Playback  ",
         highlight2: "ENx™ Technology"
     },
-    {   
-        id:36,
+    {
+        id: 36,
         image: "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IMT121_64a3adf8-db30-42ff-afbc-d44f93c37aaf_300x.png?v=1678179646",
         alt: "Trebele Immortal 121",
         name: "TRebele Immortal 121",
@@ -199,32 +200,34 @@ function displayearBuds() {
 }
 function addToCart(product) {
     var cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
-    var existingProduct = cartProducts.find(function (p) {
-      return p.name === product.name;
+    var existingProductIndex = cartProducts.findIndex(function (p) {
+        return p.id === product.id;
     });
-  
-    if (existingProduct) {
-      existingProduct.quantity += 1;
-      existingProduct.price = parseInt(product.price) * existingProduct.quantity;
+
+    if (existingProductIndex !== -1) {
+        var existingProduct = cartProducts[existingProductIndex];
+        existingProduct.quantity += 1;
+        existingProduct.price = parseInt(product.price) * existingProduct.quantity;
     } else {
-      var newProduct = {
-        image: product.image_url,
-        name: product.name,
-        price: parseInt(product.price),
-        quantity: 1,
-      };
-      cartProducts.push(newProduct);
+        var newProduct = {
+            id: product.id,
+            image: product.cartImage,
+            name: product.name,
+            price: parseInt(product.price),
+            quantity: 1,
+        };
+        cartProducts.push(newProduct);
     }
-  
+
     localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
-  }
-
-
-
-function openProductPage(element) {
-    window.location.href = "product" + element.id + ".html";
 }
 
+
+
+
+function openProductPage() {
+    window.location.href = "Products/Gaming HeadPhones/Product Description/boAtImmortal121.html";
+}
 
 
 
