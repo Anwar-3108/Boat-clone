@@ -170,16 +170,12 @@ function display(productArray) {
 
 
 
-function choose(smallphoto) {
-    let picSelector = document.getElementById("imagebox");
-    picSelector.src = smallphoto.src;
-}
 
 function choose(smallphoto) {
     let picSelector = document.getElementById("imagebox");
     picSelector.src = smallphoto.src;
 }
-function checkDelivery(elem, pincode) {
+function checkDelivery(_elem, pincode) {
     var deliverymessage = document.querySelector(".deliverymessage");
     var errormessage = document.querySelector(".errormessage");
 
