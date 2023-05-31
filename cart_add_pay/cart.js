@@ -1,8 +1,8 @@
 document.querySelector("button").addEventListener("click", check);
 var cart = JSON.parse(localStorage.getItem("cartProducts")) || [];
 
-
-function getPrdouctCard(productName, productQty, discountPrice, productImage, index) {
+function getPrdouctCard(name, productQty, discountPrice, productImage, index) {
+  console.log(name, productQty, discountPrice, productImage, index);
   return `
   <div style="border-radius: 10px; border: 1px solid rgb(0 19 37 / 8%); margin: 15px;">
         <div style="display: flex; justify-content: space-between; padding: 10px;">
@@ -11,7 +11,7 @@ function getPrdouctCard(productName, productQty, discountPrice, productImage, in
               <img style="width: 100%;" src="${productImage}">
             </div>
             <div style="width: 60%; padding: 0 10px; text-align: left; font-size: 14px;">
-              <div>${productName}</div>
+              <div>${name}</div>
               <div></div>
             </div>
           </div>
@@ -152,7 +152,16 @@ function check() {
     var temp = document.createElement("p");
     temp.setAttribute("class", "krp");
 
-    alert(temp = " 25% off applied");
+    Swal.fire({
+      title: 'hurray!!! 🎉 30% off applied..',
+      confirmButtonColor: 'black',
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    })
 
     var change = (total * 3) / 10;
     document.getElementById("grandTotalPrice").textContent = total - change;
