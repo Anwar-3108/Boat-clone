@@ -307,7 +307,7 @@
 
 
 @media (max-width:1138px){
-    #carouselExampleAutoplaying{
+    .slider-container{
     width: 80%;
     margin: auto;
     }
@@ -385,7 +385,7 @@
 
 
 @media (max-width:750px){
-    #carouselExampleAutoplaying{
+    .slider-container{
     width: 80%;
     margin: auto;
     }
