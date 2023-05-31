@@ -1,8 +1,45 @@
-#carouselExampleAutoplaying{
+.slider-container {
+    position: relative;
     margin: 0 20px;
-    /* width: 100%; */
-}
-
+    border-radius: 10px;
+  }
+  
+  .slider {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: auto;
+    display: none;
+    border-radius: 10px;
+  }
+  
+  .slider-controls {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff5d;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+  
+  .slider-controls button {
+    width: 5px;
+    height: 12px;
+    border-radius: 100%;
+    border: none;
+    margin: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .slider-controls button.active {
+    background-color: #000000;
+  }
 
 #main{
     margin-top: 30px;
