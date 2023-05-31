@@ -230,6 +230,7 @@ function addToCart(elem) {
       // If the product is not in the cart, create a new object with the required properties
       var newCartItem = {
         id: elem.id,
+        name: elem.name,
         image: elem.cartImage,
         price: elem.price * quantity,
         quantity: quantity,
