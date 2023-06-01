@@ -55,14 +55,23 @@
     text-decoration: underline 2px solid red;
     
 }
+.bigmain{
+      width: 97%;
+      margin: auto;
+      overflow-x: scroll;
+      scrollbar-width: none;
+}
+.bigmain::-webkit-scrollbar {
+    display: none; /* Remove scrollbar for Chrome, Safari, and Opera */
+}
 #main1{
-    margin: 15px 20px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 20px;
+    display: flex;
+    width: 120%;
+    gap: 25px;
+    
 }
 #main1 > div{
-    width: 100%;
+    width: 30%;
     border-radius: 10px;
 }
 #main1 > div > a > video{
@@ -97,13 +106,12 @@
 }
 
 #main2{
-    margin: 15px 20px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 20px;
+    display: flex;
+    width: 100%;
+    gap: 25px;
 }
 #main2 > div{
-    width: 100%;
+    /* width: 30%; */
     border-radius: 10px;
 }
 #main2 > div > div > a > img{
@@ -149,9 +157,9 @@
     border-radius: 10px;
 }
 #main3{
-    display: grid;
-    grid-template-columns: repeat(11,1fr);
-    margin: 15px 20px;
+    display: flex;
+    width: 120%;
+    gap: 10px;
 }
 #main3 > div{
     padding: 10px;
@@ -307,160 +315,11 @@
 
 
 @media (max-width:1138px){
-    .slider-container{
-    width: 80%;
-    margin: auto;
-    }
-    #main1{
-        grid-template-columns: repeat(2,1fr);
-                width: 80%;
-        margin: auto;
-    }
-    #main1 > div{
-        width: 80%;
-        margin: auto;
-    }
-    #main2{
-        grid-template-columns: repeat(2,1fr);
-        width: 80%;
-        margin: auto;
-    }
-    #main2 > div{
-        width: 80%;
-        margin: auto;
-    }
-    #main3{
-        grid-template-columns: repeat(4,1fr);
-        width: 80%;
-        margin: auto;
-    }
-    #main3 > div{
-        width: 80%;
-        margin: auto;
-    }
-    #main4 > div{
-        width: 50%;
-
-    }
-    #main5{
-        grid-template-columns: repeat(2,1fr);
-        width: 80%;
-        margin: auto;
-    }
-    #main5 > div{
-        width: 80%;
-        margin: auto;
-    }
-    #main6{
-        grid-template-columns: repeat(2,1fr);
-        width: 80%;
-        margin: auto;
-    }
-    #main6 > div{
-        width: 80%;
-        margin: auto;
-    }
-    #main7{
-        grid-template-columns: repeat(2,1fr);
-        width: 80%;
-        margin: auto;
-    }
-    #main7 > div{
-        width: 80%;
-        margin: auto;
-    }
-    #main8{
-        width: 70%;
-        margin: auto;
-    }
-
-    #discountbanner{
-        display: none;
-    }
-    #main{
-        text-align: center;
-    }
+    
 }
 
 
 
 @media (max-width:750px){
-    .slider-container{
-    width: 80%;
-    margin: auto;
-    }
-    #main1{
-        grid-template-columns: repeat(1,1fr);
-        width: 80%;
-        margin: auto;
-    }
-    #main1 > div{
-        width: 60%;
-        margin: auto;
-    }
-    #main2{
-        grid-template-columns: repeat(1,1fr);
-        width: 80%;
-        margin: auto;
-    }
-    #main2 > div{
-        width: 60%;
-        margin: auto;
-    }
-    #main3{
-        grid-template-columns: repeat(2,1fr);
-        width: 80%;
-        margin: auto;
-    }
-    #main3 > div{
-        width: 60%;
-        margin: auto;
-    }
-    #main4{
-        grid-template-columns: repeat(2,1fr);
-        width: 60%;
-        margin: auto;
-    }
-    #main4 > div{
-        width: 40%;
-
-    }
-    #main5{
-        grid-template-columns: repeat(1,1fr);
-        width: 80%;
-        margin: auto;
-    }
-    #main5 > div{
-        width: 60%;
-        margin: auto;
-    }
-    #main6{
-        grid-template-columns: repeat(1,1fr);
-        width: 80%;
-        margin: auto;
-    }
-    #main6 > div{
-        width: 60%;
-        margin: auto;
-    }
-    #main7{
-        grid-template-columns: repeat(1,1fr);
-        width: 80%;
-        margin: auto;
-    }
-    #main7 > div{
-        width: 60%;
-        margin: auto;
-    }
-    #main8{
-        width: 50%;
-        margin: auto;
-    }
-
-    #discountbanner{
-        display: none;
-    }
-    #main{
-        text-align: center;
-    }
+    
 }
