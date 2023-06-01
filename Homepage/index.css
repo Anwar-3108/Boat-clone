@@ -337,9 +337,179 @@
         width: 107%;
     }
 }
-
-
-
-@media (max-width:750px){
+@media (max-width:1300px){
+    #main1{
+    width: 137%;
     
+    }
+    #discountbanner {
+    display: none;
+    }
+    #main2 , #main5 , #main7{
+    width: 117%;
+    
+    }
+    #main6{
+        width: 167%;
+    }
+}
+@media (max-width:1200px){
+    #main1{
+    width: 147%;
+    
+    }
+    #discountbanner {
+    display: none;
+    }
+    #main2 , #main5 , #main7{
+    width: 127%;
+    
+    }
+    #main6{
+        width: 177%;
+    }
+}
+@media (max-width:1100px){
+    #main1{
+    width: 157%;
+    
+    }
+    #discountbanner {
+    display: none;
+    }
+    #main2 , #main5 , #main7{
+    width: 137%;
+    
+    }
+    #main6{
+        width: 187%;
+    }
+}
+@media (max-width:1000px){
+    #main1{
+    width: 167%;
+    
+    }
+    #discountbanner {
+    display: none;
+    }
+    #main2 , #main5 , #main7{
+    width: 147%;
+    
+    }
+    #main6{
+        width: 197%;
+    }
+}
+@media (max-width:900px){
+    #main1{
+    width: 177%;
+    
+    }
+    #discountbanner {
+    display: none;
+    }
+    #main2 , #main5 , #main7{
+    width: 157%;
+    
+    }
+    #main6{
+        width: 207%;
+    }
+}
+@media (max-width:800px){
+    #main1{
+    width: 187%;
+    
+    }
+    #discountbanner {
+    display: none;
+    }
+    #main2 , #main5 , #main7{
+    width: 167%;
+    
+    }
+    #main6{
+        width: 217%;
+    }
+}
+@media (max-width:700px){
+    #main1{
+    width: 197%;
+    
+    }
+    #discountbanner {
+    display: none;
+    }
+    #main2 , #main5 , #main7{
+    width: 177%;
+    
+    }
+    #main6{
+        width: 227%;
+    }
+}
+@media (max-width:600px){
+    #main1{
+    width: 207%;
+    
+    }
+    #discountbanner {
+    display: none;
+    }
+    #main2 , #main5 , #main7{
+    width: 187%;
+    
+    }
+    #main6{
+        width: 237%;
+    }
+}
+@media (max-width:500px){
+    #main1{
+    width: 217%;
+    
+    }
+    #discountbanner {
+    display: none;
+    }
+    #main2 , #main5 , #main7{
+    width: 197%;
+    
+    }
+    #main6{
+        width: 247%;
+    }
+}
+@media (max-width:400px){
+    #main1{
+    width: 227%;
+    
+    }
+    #discountbanner {
+    display: none;
+    }
+    #main2 , #main5 , #main7{
+    width: 207%;
+    
+    }
+    #main6{
+        width: 257%;
+    }
+}
+@media (max-width:300px){
+    #main1{
+    width: 227%;
+    
+    }
+    #discountbanner {
+    display: none;
+    }
+    #main2 , #main5 , #main7{
+    width: 207%;
+    
+    }
+    #main6{
+        width: 257%;
+    }
 }
