@@ -259,11 +259,11 @@ function addToCart(product) {
         existingProduct.price = parseInt(product.price) * existingProduct.quantity;
     } else {
         var newProduct = {
-            id: product.id,
-            image: product.cartImage,
-            name: product.name,
-            price: parseInt(product.price),
-            quantity: 1,
+          id: product.id,
+          image: product.id === 12 ? product.cartImage : product.image,
+          name: product.name,
+          price: parseInt(product.price),
+          quantity: 1,
         };
         cartProducts.push(newProduct);
     }
@@ -271,11 +271,6 @@ function addToCart(product) {
     localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
 }
 
-
-
-function openProductPage(element) {
-    window.location.href = "product" +airdopes121.html;
-}
 
 
 
