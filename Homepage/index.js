@@ -42,3 +42,24 @@ showSlide();
 setInterval(function() {
   nextSlide();
 }, 3000);
+
+var slideIndex = 0;
+    showSlide1(slideIndex);
+    
+    function changeSlide(n) {
+      showSlide1(slideIndex += n);
+    }
+    
+    function showSlide1(n) {
+      var slides = document.getElementsByClassName("slide");
+      if (n >= slides.length) {
+        slideIndex = 0;
+      }
+      if (n < 0) {
+        slideIndex = slides.length - 1;
+      }
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+      }
+      slides[slideIndex].classList.add("active");
+    }

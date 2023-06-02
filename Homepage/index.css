@@ -1,7 +1,7 @@
+
 .slider-container {
     position: relative;
-    margin: 0 20px;
-    border-radius: 10px;
+    margin: 0;
   }
   
   .slider {
@@ -13,7 +13,6 @@
     width: 100%;
     height: auto;
     display: none;
-    border-radius: 10px;
   }
   
   .slider-controls {
@@ -84,23 +83,29 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-#discountbanner {
-    width: 97%;
-    margin: auto;
-    margin-top: 10px;
-    text-align: center;
-}
+.discountbanner {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+  }
 
-#discountbanner img{
+  .discountbanner img {
     width: 100%;
-}
-#discountbanner > p{
-    color: rgb(255, 255, 255);
-    margin-top: -85px;
-    font-size:40px;
-    font-family: 'Montserrat', sans-serif;
-}
-#discountbanner > p > span{
+    height: auto;
+    display: block;
+  }
+
+  .discountbanner .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 35px;
+    text-align: center;
+    width: 80%;
+  }
+.discountbanner span{
     font-weight: bold;
 }
 
@@ -276,11 +281,11 @@
 
 #main7{
     display: flex;
-    width: 100%;
+    width: 1340px;
     gap: 20px;
 }
 #main7 > div{
-    width: 100%;
+    width: 320px;
     border-radius: 10px;
     background-color: #FAFAFA;
 }
@@ -309,9 +314,63 @@
 #main8 > img{
     width: 100%;
 }
-
+.slideshow-container {
+    position: relative;
+    max-width: 97%;
+    margin: auto;
+  }
+  
+  .slideshow-container img {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  .slideshow-container img.active {
+    display: block;
+  }
+  
+  .slideshow-container .prev{
+    
+        position: absolute;
+        top: 80%;
+        width: 20%;
+        padding-left: 67%;
+        color: rgba(0, 0, 0, 0);
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        cursor: pointer;
+  }
+  .slideshow-container .next {
+    position: absolute;
+    top: 80%;
+    width: auto;
+    padding-right: 30%;
+    color: rgba(255, 255, 255, 0);
+    font-weight: bold;
+    font-size: 20px;
+    transition: 1.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    cursor: pointer;
+  }
+  
+  .slideshow-container .prev {
+    left: 0;
+  }
+  
+  .slideshow-container .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
 
 @media (max-width:730px) {
+    .discountbanner {
+        display: none;
+      }
     #main2{
         width: 1860px;
     }
@@ -326,6 +385,13 @@
     }
     #main5 > div {
         width: 450px;
+    }
+
+
+}
+@media (max-width:400px) {
+    #main1{
+        display: none;
     }
 
 }

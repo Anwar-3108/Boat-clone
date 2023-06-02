@@ -13,7 +13,6 @@
   </head>
   <body class="p-3 m-0 border-0 bd-example">
 
-
     <div class="slider-container">
       <div class="slider">
         <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/131_desktop-new_1440x.jpg?v=1682347857" alt="Image 1">
@@ -57,10 +56,12 @@
 
 
 
-      <div id="discountbanner">
+      <div class="discountbanner">
         <a href="#"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/timer-background_1600x.png?v=1683785048" alt=""></a>
-        <p>The Summer <span>Sale 60%</span> Off Is Here</p>
-      </div>
+        <div class="text">
+            The Summer <span>Sale 60%</span> Off Is Here
+          </div>
+        </div>
 
 
       <p id="main">Daily <span> Dea<span>ls</span> </span> </p>
@@ -536,8 +537,14 @@
       
 
       <p id="main"> In The<span> Pre<span>ss</span> </span> </p>
-      <div id="main8">
-        <img src="Assets/press.png" alt="">
+      <div class="slideshow-container">
+        <img class="slide active" src="Assets/SS1.png" alt="Image 1">
+        <img class="slide" src="Assets/SS2.png" alt="Image 2">
+        <img class="slide" src="Assets/SS3.png" alt="Image 3">
+        <img class="slide" src="Assets/SS4.png" alt="Image 3">
+        
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
       </div>
       
   </body>
