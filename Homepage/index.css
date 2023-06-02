@@ -175,20 +175,18 @@
 }
 
 #main4{
-    width: 70%;
-    margin: auto;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 20px;
-}
-#main4 > div{
     width: 60%;
     margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#main4 > div{
+    width: 20%;
     text-align: center;
 }
 #main4 > div > img{
-    width: 80%;
+    width: 100%;
 }
 #main4 > div > p{
     font-size: 18px;
@@ -367,7 +365,7 @@
     border-radius: 3px 0 0 3px;
   }
 
-@media (max-width:730px) {
+@media (min-width:500px) and (max-width:730px) {
     .discountbanner {
         display: none;
       }
@@ -377,7 +375,7 @@
     #main2 > div{
         width: 450px;
     }
-    #discountbanner{
+    #main4 > div > p{
         display: none;
     }
     #main5{
@@ -389,9 +387,46 @@
 
 
 }
-@media (max-width:400px) {
+@media (max-width:500px) {
     #main1{
+        display: flex;
+        width: 980px;
+        gap: 20px;
+        
+    }
+    #main1 > div{
+        width: 180px;
+        border-radius: 10px;
+    }
+    .discountbanner {
         display: none;
+      }
+    #main2{
+        width: 1460px;
+    }
+    #main2 > div{
+        width: 350px;
+    }
+    #main4 > div > p{
+        display: none;
+    }
+    #main5{
+        width: 1830px;
+    }
+    #main5 > div {
+        width: 350px;
+    }
+    #main6{
+        width: 1520px;
+    }
+    #main6 > div{
+        width: 200px;
+    }
+    #main7{
+        width: 1260px;
+    }
+    #main7 > div{
+        width: 300px;
     }
 
 }
