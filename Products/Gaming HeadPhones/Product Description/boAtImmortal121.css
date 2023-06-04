@@ -1,38 +1,37 @@
-*{
+* {
   font-family: Arial;
 }
 
 .container {
   display: flex;
   margin: auto;
-  width: 100%;
-  height: max-content;
-
+  width: 90%;
 }
 
 .innercontainer {
-  width: 90%;
-  height: 75vh;
-  margin: 50px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border: 1px blue;
+  height: 80vh;
+  padding: 10px;
+  border-radius: 10px;
+}
+.prodDiv {
+  width: 40%;
 }
 
 .allimages {
-  height: 20vh;
   display: flex;
   align-items: center;
-
 }
 
-
-
 .mainImage img {
-  width: 80%;
+  width: 90%;
   margin: 20px;
   padding: 20px;
+  background-color: rgb(247, 242, 242);
+  border-radius: 5px;
 }
 
 .smallphoto {
@@ -43,26 +42,27 @@
   height: 8vh;
   margin-bottom: 9px;
   cursor: pointer;
-} 
-
-.textBox {
-  width: max-content;
-  height: max-content;
-  display: flex;
-  padding: 10px;
-  border-radius: 10px;
-
+  /* opacity: 0.8; */
 }
 
-h2 {
+.textBox {
+  width: 60%;
+  display: flex;
+  padding: 10px;
+  /* background-color: gray; */
+  /* background: linear-gradient(117deg, #a59792 60%, #f01e1e 60%); */
+  border-radius: 10px;
+}
+.detailbox {
+  border-bottom: 1px solid rgb(207, 204, 204);
+}
+
+.detailbox h2 {
   font-size: 25px;
   color: rgb(46, 45, 45);
   margin-bottom: 10px;
 }
-.detailbox{
-  
-  border-bottom: 1px solid rgb(207, 204, 204) ;
-}
+
 .descriptiontext {
   font-size: 17px;
   font-weight: normal;
@@ -70,119 +70,123 @@ h2 {
 .rating {
   margin-bottom: 60px;
 }
-.reviews{
+
+.reviews {
   align-items: baseline;
 }
 
 .delcartBox {
-display: flex;
-justify-content: space-evenly;
-gap: 20px;
-margin: 20px;
-margin-top: 50px;
-
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin: 20px;
+  margin-top: 50px;
 }
 .deliveryBox {
-  width: 70%;
+  /* width: 70%; */
+  width: 60%;
   background-color: #f3f3f3;
   align-items: center;
-  overflow: hidden;
+
   border-radius: 10px;
-  
 }
 .deliveryForm {
   display: flex;
-align-items: center;
-gap: 5px;
-margin: 10px;
-margin-left: 50px;
-font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+  width: 100%;
+  margin: auto;
 }
 
 .check {
-  color:white;
+  font-size: 14px;
+  color: white;
   padding: 5px;
-  background-color: red;
+  background-color: rgb(61, 57, 57);
   border-radius: 5px;
   border: none;
   margin-left: 5px;
   cursor: pointer;
 }
-.deliverymessage{
- text-align: center;
- font-size: 16px;
- color: #7d8183;
+.deliverymessage {
+  text-align: center;
+  font-size: 16px;
+  color: #7d8183;
+  margin-top: 5%;
 }
 .errormessage {
   text-align: center;
   margin-top: 20px;
- font-size: 18px;
- color: red;
+  font-size: 18px;
+  color: red;
 }
-.cartBox{
+.cartBox {
   display: flex;
   flex-direction: column;
-  border: 1px solid rgb(207, 204, 204) ;
+  border: 1px solid rgb(207, 204, 204);
   width: 40%;
   padding: 10px;
   border-radius: 10px;
 }
 .priceBox {
-display: flex;
-gap: 10px;
-align-items:baseline;
-} 
-.discount{
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+.discount {
   font-size: 20px;
   color: #09c890;
 }
-.strikedoff{
+.strikedoff {
   font-size: 18px;
-   color: grey;
-   text-decoration: line-through;
+  color: grey;
+  text-decoration: line-through;
 }
-.price{
+.price {
   font-size: 20px;
 }
 
 .tax-text {
   color: #7d8183;
-  margin-top: -10px;
-  margin-bottom: -10px;
-
 }
-
 
 .quantity-box {
-display: flex;
-gap: 5px;
-align-items: baseline;
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
 }
-.quantity-display{
-font-size: 18px;
-color: red;
-font-weight: bolder;
+.quantity-display {
+  font-size: 18px;
+  color: red;
+  font-weight: 700;
 }
-.quantity-button-minus{
+.quantity-button-minus {
   border: none;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.quantity-button-plus{
+.quantity-button-plus {
   border: none;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.add-to-cart-button{
-padding: 10px;
-background-color: red;
-border: none;
-color: rgb(252, 252, 252);
-font-size: 16px;
-border-radius: 5px;
-cursor: pointer;
+.add-to-cart-button {
+  padding: 10px;
+  background-color: red;
+  border: none;
+  color: rgb(252, 252, 252);
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .imageside {
   width: 50%;
-  
 }
 
 .imageside > img {
@@ -190,163 +194,204 @@ cursor: pointer;
   margin-left: 100px;
 }
 .belowcart {
-  margin:-10px;
+  margin: -10px;
+  overflow: hidden;
 }
-.divs  h1 {
+
+.textBox > div > div > img {
+  width: 23%;
+}
+.policy {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 0 10px 0;
+  background-color: #e8edf0;
+}
+.policy img {
+  width: 60px;
+}
+
+.policy img + p {
+  margin-left: -90px;
+}
+
+.descriptionNav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 20% 20px 20%;
+  background-color: black;
+  color: white;
+}
+.descriptionNav > h3 {
+  color: rgb(168, 165, 165);
+  cursor: pointer;
+}
+.descriptionNav > h3:hover {
+  color: red;
+}
+
+.description {
+  text-align: center;
+  padding: 10px 10% 10px 10%;
+}
+.description > h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.description > p {
+  margin: 30px 0px 20px 0;
+}
+.divs h1 {
   font-size: 30px;
   font-weight: 900;
-  margin-bottom: -10px;
 }
 .divs p {
   word-spacing: 5px;
-  
+  margin-top: 10px;
   font-weight: lighter;
   color: #343535;
 }
-.div1{
+.div1 {
   display: flex;
- justify-content: center;
+  justify-content: center;
   margin: auto;
 }
 
-  
-.div1box1, .div1box2 {
-width: 50%;
-margin: auto;
-padding: 30px;
+.div1box1,
+.div1box2 {
+  width: 50%;
+  margin: auto;
+  padding: 30px;
 }
 
 .div1box1 {
   width: 50%;
   margin: auto;
-margin-right: 50px;
-margin-left: 30px;
+  margin-right: 50px;
+  margin-left: 30px;
 }
 
-.div1box2 > img{
-width: 80%;
-margin:auto !important;
+.div1box2 > img {
+  width: 80%;
+  margin: auto !important;
 }
 
-.div2{
+.div2 {
   display: flex;
- justify-content: center;
+  justify-content: center;
   margin: auto;
   background-color: #88a290;
-  
 }
 
-  
-.div2box1, .div2box2 {
-width: 60%;
-margin: auto;
-margin-top: -15px;
-margin-bottom: -80px;
-
+.div2box1,
+.div2box2 {
+  width: 60%;
+  margin: auto;
+  margin-top: -15px;
+  margin-bottom: -80px;
 }
 
 .div2box2 {
   width: 40%;
   margin: auto;
-margin-right: 50px;
-margin-left: 30px;
+  margin-right: 50px;
+  margin-left: 30px;
 }
 
-.div2box1 > img{
-width: 60%;
-margin:auto;
-margin-bottom: 10%;
-margin-left: 10%;
-
+.div2box1 > img {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 10%;
+  margin-left: 10%;
 }
-.div3{
+.div3 {
   display: flex;
- justify-content: center;
+  justify-content: center;
   margin: auto;
   margin-bottom: -15px;
   margin-top: -20px;
 }
 
-  
-.div3box1, .div3box2 {
-width: 50%;
-margin: auto;
-padding: 30px;
+.div3box1,
+.div3box2 {
+  width: 50%;
+  margin: auto;
+  padding: 30px;
 }
 
 .div3box1 {
   width: 50%;
   margin: auto;
-margin-right: 50px;
-margin-left: 30px;
+  margin-right: 50px;
+  margin-left: 30px;
 }
 
-.div3box2 > img{
-width: 80%;
-margin:auto !important;
+.div3box2 > img {
+  width: 80%;
+  margin: auto !important;
 }
 
-.div4{
+.div4 {
   display: flex;
- justify-content: center;
+  justify-content: center;
   margin: auto;
   background-color: #f0e7e3;
-  
 }
 
-  
-.div4box1, .div4box2 {
-width: 50%;
-margin: auto;
-
+.div4box1,
+.div4box2 {
+  width: 50%;
+  margin: auto;
 }
 .div4box1 {
-padding-top: -40px;
-margin-bottom: -60px;
-margin-left: 50px;
+  padding-top: -40px;
+  margin-bottom: -60px;
+  margin-left: 50px;
 }
 
 .div4box2 {
   width: 50%;
   margin: auto;
-margin-right: 50px;
-margin-left: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
-.div4box1 > img{
-width: 75%;
-margin:auto;
-margin-bottom: 10%;
-margin-left: 10%;
-
+.div4box1 > img {
+  width: 75%;
+  margin: auto;
+  margin-bottom: 10%;
+  margin-left: 10%;
 }
 
-.div5{
+.div5 {
   display: flex;
- justify-content: center;
+  justify-content: center;
   margin: auto;
 }
 
-  
-.div5box1, .div5box2 {
-width: 50%;
-margin: auto;
-padding: 30px;
+.div5box1,
+.div5box2 {
+  width: 50%;
+  margin: auto;
+  padding: 30px;
 }
 
 .div5box1 {
   width: 50%;
   margin: auto;
-margin-right: 50px;
-margin-left: 30px;
+  margin-right: 50px;
+  margin-left: 30px;
 }
 
-.div5box2 > img{
-width: 70%;
-margin-left: 50px;
+.div5box2 > img {
+  width: 70%;
+  margin-left: 50px;
 }
 
-.textBox>div>div>img {
+.textBox > div > div > img {
   width: 23%;
 }
 
@@ -358,7 +403,6 @@ margin-left: 50px;
   align-items: center;
   padding: 10px 0 10px 0;
   background-color: #e8edf0;
-
 }
 .policy img {
   width: 60px;
@@ -368,20 +412,18 @@ margin-left: 50px;
   margin-left: -90px;
 }
 
-
 .descriptionNav {
   display: flex;
   justify-content: space-evenly;
   padding: 20px 20% 20px 20%;
   background-color: black;
   color: white;
-  
 }
-.descriptionNav > h3{
+.descriptionNav > h3 {
   color: rgb(168, 165, 165);
   cursor: pointer;
 }
-.descriptionNav > h3:hover{
+.descriptionNav > h3:hover {
   color: red;
 }
 
@@ -389,58 +431,43 @@ margin-left: 50px;
   text-align: left;
   padding: 10px 10% 10px 10%;
   align-content: center;
-
 }
 .description > h1 {
- font-size: 38px; 
- font-weight: 900; 
- margin-bottom: -10px;
+  font-size: 38px;
+  font-weight: 900;
+  margin-bottom: -10px;
 }
 
 .description > p {
- text-align: center;
- font-size: 15px;
- font-weight: 200;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 200;
 }
-
-
-
 
 #FAQ {
-      
   width: 80%;
   margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 5%;
+  margin-bottom: 5%;
   font-size: larger;
 }
-
-#FAQ > h1{
-  width: 50%;
-  margin: auto;
-  text-align: left;
- 
+#FAQ h1 {
+  margin-bottom: 1%;
+  font-weight: bold;
 }
-.faq {
-  width: 50%;
-  margin: auto;
-  margin-top: 10px;
-  text-align: left;
-  font-size: 12px;
-}
-.faq-line{
-  border-bottom: 1px solid rgb(206, 200, 200);
-}
-
-
-h4 {
-  font-size: small;
+#FAQ h4 {
   font-style: italic;
-  color: #7d8183;
+  color: gray;
+  font-weight: bold;
+  margin-bottom: 25px;
 }
-  
+
+.ans {
+  font-size: small;
+  color: rgb(172, 168, 168);
+}
+
 .blogtitle {
- 
   margin-bottom: -10px;
   text-align: center;
 }
@@ -448,7 +475,7 @@ h4 {
 .A {
   color: red;
   text-align: center;
-  }
+}
 
 .blogboxMain {
   display: flex;
@@ -476,378 +503,140 @@ h4 {
   width: 100%;
   margin-top: 5px;
   font-size: 14px;
-  text-align:left;
+  text-align: left;
   cursor: pointer;
 }
 .blog-title:hover {
   color: red;
 }
 
-
-
-@media only screen and  (min-width: 480px) and (max-width: 768px){
+@media only screen and (max-width: 1080px) {
   .innercontainer {
+    height: 50%;
     flex-direction: column;
-    margin: auto;
-    width: 100%;
-    
-  }
-
-  .mainImage {
-  
-   width: 100%;
-   height: 100%;
-   margin: auto;
-   margin-top: 100%;
-   
-  }
-
-  
-  .textBox {
-    margin-top: 160%;
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-  }
-
-  .rating {
-    margin-bottom: 10px;
-  }
-
-  .delcartBox{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
     align-items: center;
-    
+    justify-content: space-evenly;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .prodDiv {
+    width: 100%;
+  }
+  .allimages {
+    flex-direction: column-reverse;
+  }
+  .smallphoto {
+    flex-direction: row;
+  }
+  .smallphoto img {
+    height: 15vh;
+    margin-bottom: 9px;
+    cursor: pointer;
+    /* opacity: 0.8; */
   }
 
+  .textBox {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .detailbox {
+    border-bottom: 1px solid rgb(207, 204, 204);
+  }
+
+  .descriptiontext {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .rating {
+    margin-bottom: 5%;
+  }
+
+  .reviews {
+    align-items: baseline;
+  }
+
+  .delcartBox {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+    margin-top: 50px;
+  }
   .deliveryBox {
     width: 100%;
-   
+    align-items: center;
+    padding: 10px;
   }
-  .deliveryForm {
-    flex-direction: column;
-  margin: auto;
-  
+  .check {
+    font-size: 12px;
+    padding: 10px;
   }
 
-  .deliveryText{
-    display: none;
-  }
   .cartBox {
     width: 100%;
     padding: 10px;
-    
+    border-radius: 10px;
     align-items: center;
   }
-  .priceBox {
-    flex-direction: row;
-    align-items: center;
-    
-  }
-  .discount{
-    font-size: 18px;
-    color: #09c890;
-  }
-  .strikedoff{
+  .quantity-display {
     font-size: 16px;
-     color: grey;
-     text-decoration: line-through;
   }
-  .price{
-    font-size: 20px;
+  .quantity-button-minus {
+    font-weight: 500;
   }
-  .quantity-box{
-    justify-content: center;
-   
+  .quantity-button-plus {
+    font-weight: 500;
   }
 
- 
-  
-
-  .smallphoto {
-    display: none;
-  }
-  .belowcart {
-   
-    margin:-10px;
-    margin-top: 100%;
+  .add-to-cart-button {
+    width: 80%;
   }
   .policytext {
     display: none;
   }
-  .descriptionNav {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 10px;;
-    margin: auto;
-    padding: 20px 20% 20px 20%;
-    background-color: black;
-    color: white;
-    font-size: small;
+  .description h1 {
+    margin-top: 10px;
+    font-size: 25px;
   }
-
-  description {
-   margin-top: 10px;
-    padding: 10px 10% 10px 10%;
-    align-content: center;
-  
+  .description p {
+    font-size: 16px;
   }
-  .description > h1 {
-    text-align: center;
-   font-size: 18px; 
-   font-weight: 900; 
-   margin-bottom: -10px;
-  }
-  
-  .description > p {
-   text-align: center;
-   font-size: 16px;
-   font-weight: 200;
-  }
-  .div2,.div4{
+  .div2,
+  .div4 {
     flex-direction: column;
     justify-content: center;
   }
-  .div1,.div3,.div5{
-   flex-direction: column-reverse;
-   justify-content: center;
-  
-  }
-  
-  .div1box1,.div2box2,.div3box1,.div4box2{
-    width: 90%;
-    margin: auto;
-    margin-top: -15%;
-  }
-  .div1box2 {
-    margin-top: -20px;
-    margin-left: 100px;
-  }
-  .div2box1{
-    margin: 20px;
-    margin-left: 100px;
-   
-  }
-.div4box1{
-  margin-bottom: 10px;
-  margin-left: 100px;
-}
-.div5{
-  width: 90%;
-}
-.div5box2 {
-  margin-top: -10px;
-  margin-bottom: -20px;
-  margin-left: 20px;
-}
-  
-
-  .faq{
-    width: 100%;
-  }
- .faq > h3 > span {
-  display:  none;
- }
-  .blogboxMain {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 70px;
-  }
-  .blog-title {
-    width: 100%;
-    margin-top: 5px;
-    font-size: 12px;
-    text-align:left;
-    cursor: pointer;
+  .div1,
+  .div3,
+  .div5 {
+    flex-direction: column-reverse;
+    justify-content: center;
   }
 
-}
-
-@media only screen and (max-width: 479px) {
-  .innercontainer {
-    flex-direction: column;
-    margin: auto;
+  .div1,
+  .div2,
+  .div3,
+  .div4,
+  .div5 {
     width: 100%;
-    
+    padding: 10px;
+    align-items: center;
   }
-
-  .mainImage {
-  
+  .div1box1,
+  .div1box2,
+  .div2box1,
+  .div2box2,
+  .div3box1,
+  .div3box2,
+  .div4box1,
+  .div4box2,
+  .div5box1,
+  .div5box2 {
     width: 100%;
-    height: 100%;
-    margin: auto;
-    margin-top: 180%;
-    
-   }
- 
-   
-   .textBox {
-     margin-top: 240%;
-     width: 100%;
-     text-align: center;
-     padding: 20px;
-   }
- 
-   .rating {
-     margin-bottom: 10px;
-   }
- 
-   .delcartBox{
-     display: flex;
-     flex-wrap: wrap;
-     margin-top: 10px;
-     align-items: center;
-     
-   }
- 
-   .deliveryBox {
-     width: 100%;
-    
-   }
-   .deliveryForm {
-     flex-direction: column;
-   margin: auto;
-   
-   }
- 
-   .deliveryText{
-     display: none;
-   }
-   .cartBox {
-     width: 100%;
-     padding: 10px;
-     
-     align-items: center;
-   }
-   .priceBox {
-     flex-direction: row;
-     align-items: center;
-     
-   }
-   .discount{
-     font-size: 18px;
-     color: #09c890;
-   }
-   .strikedoff{
-     font-size: 16px;
-      color: grey;
-      text-decoration: line-through;
-   }
-   .price{
-     font-size: 20px;
-   }
-   .quantity-box{
-     justify-content: center;
-    
-   }
-   .smallphoto {
-     display: none;
-   }
-   .belowcart {
-    
-     margin:-10px;
-     margin-top:170%;
-   }
-   .policytext {
-     display: none;
-   }
-   .descriptionNav {
-     display: flex;
-     justify-content: space-evenly;
-     gap: 10px;;
-     margin: auto;
-     padding: 20px 20% 20px 20%;
-     background-color: black;
-     color: white;
-     font-size: small;
-   }
- 
-   .description > h1{
-     font-size: 20px;
     text-align: center;
-    font-weight: 800;
-   }
-     .description > p{
-       font-size: 12px;
-     }
-     .divs  h1{
-      font-size: 19px;
-     }
-     .divs p {
-      font-size: 12px;
-      font-weight: 500;
-     }
-
-       .div2,.div4{
-        flex-direction: column;
-        justify-content: center;
-      }
-      .div1,.div3,.div5{
-       flex-direction: column-reverse;
-       justify-content: center;
-      
-      }
-      
-      .div1box1,.div2box2,.div3box1,.div4box2{
-        width: 90%;
-        margin: auto;
-        margin-top: -15%;
-      }
-      .div1box2 {
-        margin-top: -20px;
-        margin-left: 50px;
-      }
-      .div2box1{
-        margin: 20px;
-        margin-left: 80px;
-       
-      }
-      .div3{
-        margin-top: 10px;
-      }
-      .div3box1{
-        margin-top: -50px;
-      }
-    .div4box1{
-      margin-bottom: 10px;
-      margin-left: 70px;
-    }
-    .div5{
-      width: 90%;
-    }
-    .div5box2 {
-      margin-top: -10px;
-      margin-bottom: -20px;
-      margin-left: 5px;
-    }
-
-  .faq {
-    width: 100%;
   }
-
-  .faq > h3 > span {
-    display:  none;
-   }
-   .blogboxMain {
-    width: 100%;
-     display: flex;
-    flex-wrap: wrap;
-      gap: 10%;
-     margin: auto;
-     margin-bottom: 70px;
-   }
-   .blog-title {
-     width: 100%;
-     margin-top: 5px;
-     font-size: 12px;
-     text-align:left;
-     cursor: pointer;
-   }
- 
- }
- 
-
- 
+}

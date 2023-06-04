@@ -4,12 +4,706 @@
 <head>
     <title>boAt Immortal 121</title>
 
-    <link rel="stylesheet" href="boAtImmortal121.css">
+    <link rel="stylesheet" href="CSS/boAtImmortal121.css">
+
+    <link rel="stylesheet" href="./CSS/Navbar.css">
+
+    
+    <!-- common links start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Buy Earbuds, Headphones & Earphones at India's No. 1 Earwear Brand:boAt</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/profile-1_2e1d2124-ba4c-43f0-bb83-0e6ee038ff30_1200x1200_crop_center.png?v=1681111976">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./CSS/Navbar.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/cart.css">
+    <!-- common links end -->
+
+
+
+
+
 </head>
 
+<style>
+    *{
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #first{
+      background-color:#EFF4F7;
+      color:rgb(0, 0, 0);
+      font-family: 'Anek Malayalam', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing:1px;
+  
+  }
+  #footer h4,#footer h5{
+      font-family: 'Anek Malayalam', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing:1px;
+  }
+  #first{
+      display:flex;
+     
+     
+  }
+  
+  #first>div{
+      margin-left:40px;
+  
+      /* border:1px solid green; */
+      
+  }
+  #first>div:nth-child(2){
+    margin: auto;
+    margin-top:30px;
+    
+  }
+  #first>div:nth-child(2)>p{
+      cursor:pointer;
+  }
+  #first>div:nth-child(3){
+      margin: auto;
+      margin-top:30px;
+      
+    }
+    #first>div:nth-child(3)>p{
+      cursor:pointer;
+  }
+    #first>div:nth-child(4){
+      margin: auto;
+      margin-top:30px;
+      
+    }
+    #first>div:nth-child(4)>p{
+      cursor:pointer;
+  }
+  #footer input{
+      border-color:none;
+      margin: auto;
+      border: 0ch;
+      width:250px;
+      padding:10px;
+  }
+  #footer button{
+      font-size:medium;
+      cursor: pointer;
+      border-color:none;
+      margin: auto;
+      border-radius:5px;
+      border: 0ch;
+      width:200px;
+  
+      height:40px;
+      padding:10px;
+      background-color:#ff0000;
+  }
+  #border{
+      display:flex;
+      width:500px;
+      height:50px;
+      border-radius:5px;
+      /* border:1px solid rgba(128,128,128,0.5); */
+  }
+  #first>div img{
+     margin-top:70px;
+     margin-bottom:8px;
+     cursor: pointer;
+     /* border:1px solid purple; */
+     
+      height:59px;
+  }
+  #second{
+      display:flex;
+      margin-top:40px;
+      height:30px;
+      justify-content:space-around;
+      width:300px;
+     /* border:1px solid red; */
+  }
+  .social { 
+  cursor: pointer;
+  }
+  .social:hover{
+      color: red;
+  }
+   
+  
+  #footer p{
+      color:#bdbdbd;
+      font-size:13px;
+     font-weight:bold;
+     word-spacing:1px;
+  }
+  #card{
+      display:flex;
+      /* border:1px solid red; */
+      justify-content:space-around;
+      margin-top:70px;
+     
+  }
+  #card>div{
+      width:700px; 
+      /* border:1px solid green;    */
+  }
+  #card>div:first-child{
+      width:500px;
+  }
+  #card>div:last-child{
+      width:600px;
+      display:flex;
+      
+      /* border:1px solid blue; */
+      justify-content:space-around;
+  }
+  
+  #card> #second{
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      font-size:x-large;
+  }
+  
+  #rights{
+      margin-top:30px;
+      /* border:1px solid red; */
+     text-align: center;
+  }
+  
+  #border >button {
+  border-radius: 50%;
+  width: 20px;
+  height: 30px;
+  border: none;
+  margin-left: -15%;
+  margin-top: 6%;
+  font-size: small;
+  font-weight: 900;
+  padding: -20px;
+  }
+  #border >input {
+  border-radius: 10%;
+  width: 300px;
+  height: 45px;
+  border: none;
+  margin: 5%;
+  letter-spacing: 0.1rem;
+  }
+  #rights{
+      display: block;
+      justify-content: center;
+      align-items: center;
+  }
+  .lowestdivBox{
+      background: #E7F0F5;
+      /* margin-top: 0%; */
+      padding-top: 0.5%;
+       padding-bottom : 0.5%;
+  }
+  h5{
+      font-size: larger;
+  }
+  
+  #left p,
+    #help p,
+    #company p {
+      cursor: pointer;
+      color: #837f7f;
+    }
+    #left p:hover,
+    #help p:hover,
+    #company p:hover {
+  color: black;  
+  }
+  /* responsive content */
+  @media only screen and (max-width: 480px) {
+    /* Styles for screen size 480px max */
+    #first {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: auto;
+    }
+    #first div { 
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      padding: 10px;
+      margin: auto;
+    }
+    h1{
+      font-size: 18px;
+      text-align: center;
+    }
+    #border {
+      width: 100%;
+     margin-right: 25px;
+    }
+  
+    #left,
+    #help,
+    #company {
+      
+      display: flex;
+      flex-direction: column;
+      line-height: 0%;
+      font-size: 14px;
+      
+    }
+    #left p,
+    #help p,
+    #company p {
+      display: none;;
+    }
+   
+    h5 {
+      margin-bottom: 10px;
+      line-height: 0%;
+      font-size: 16px;
+      font-weight: 600;
+      color: #3f3d3d;
+      cursor: pointer;
+      text-align: center;
+    }
+     h5:hover{
+      color: #ff0000;
+     }
+    #left h5 {
+      margin-bottom: -50px;
+      
+    }
+    #help h5 {
+      margin-bottom: -50px;
+    }
+  
+  .lowestdiv {
+     padding: 10px;
+     font-size: small;
+     overflow: hidden;
+  }
+  #second h3 {
+      font-size: 18px;
+  }
+    #card {
+      margin-top: -10px;
+    }
+   #rights :nth-child(2) {
+      margin-bottom: 30px;
+   }
+  }
+  
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Styles for screen size 480-768px */
+     #first {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: auto;
+    }
+    #first div { 
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      margin: auto;
+      
+    }
+    h1{
+      font-size: 20px;
+      text-align: center;
+    }
+    #border {
+      width: 100%;
+      
+    }
+  
+    #left,
+    #help,
+    #company {
+      width: 90%;
+      line-height: 0%;
+      font-size: 14px;
+      text-align: center;
+      
+    }
+    
+    #left p,
+    #help p,
+    #company p {
+      cursor: pointer;
+      color: #837f7f;
+      width: 100%;
+      text-align: center;
+      
+    }
+    #left p:hover,
+    #help p:hover,
+    #company p:hover {
+    color: black;  
+  }
+  
+    h5 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: 500;
+     
+      
+    }
+    
+  .lowestdiv {
+     padding: 10px;
+     font-size: small;
+     
+  }
+  #second h3 {
+      font-size: 20px;
+  }
+    #card {
+      margin-top: -10px;
+    }
+   #rights :nth-child(2) {
+      margin-bottom: 30px;
+   }
+  }
+  </style>
 <body>
 
-    <!-- nav end  -->
+  <!-- Navbar start -->
+  <header id="header">
+    <div class="container" style="display: block; justify-content: space-between;">
+      <nav class="navigation">
+        <a href="#!" class="logo">
+          <img src="./Assets/boAt_logo_small.svg" alt="Logo" class="logo-img" />
+        </a>
+        <ul class="nav_menu">
+         
+          <li class="nav_list nav_list_menu">
+            <a href="#!" class="nav_link">
+              <span>Categories</span>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </a>
+            <div class="dropdown">
+              <div class="dropdown-inner">
+                <div class="dropdown-item">
+                 
+                  <div class="item-list">
+                    <div class="item-img">
+                      <a href="earbuds.html">
+                        <img src="Assets/img-1.webp" alt="Icon" />
+  
+                      </a>
+                    </div>
+                    <div class="item-list-info  catInfo">
+                      <p>True Wireless Earbuds</p>
+                    </div>
+                  </div>
+                  <div class="item-list">
+                    <div class="item-img">
+                      <a href="gamingHeadphones.html">
+                        <img src="Assets/img-9.png" alt="Icon" />
+  
+                      </a>
+                    </div>
+                    <div class="item-list-info catInfo">
+                      <p>Gaming Headphone</p>
+                    </div>
+                  </div>
+                  <div class="item-list">
+                    <div class="item-img">
+                      <a href="smartwatch.html">
+  
+                        <img src="Assets/img-3.webp" alt="Icon" />
+                      </a>
+                    </div>
+                    <div class="item-list-info catInfo">
+                      <p>Smart Watches</p>
+                    </div>
+                  </div>
+                  <div class="item-list">
+                    <div class="item-img">
+                      <a href="#">
+  
+                        <img src="Assets/img-4.webp" alt="Icon" />
+                      </a>
+                    </div>
+                    <div class="item-list-info catInfo">
+                      <span class="info-badge catInfo">New</span>
+                      <p>Headphone</p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="dropdown-item">
+                  <div class="item-list">
+                    <div class="item-img">
+                      <a href="#">
+                        <img src="Assets/img-5.webp" alt="Icon" />
+  
+                      </a>
+                    </div>
+                    <div class="item-list-info catInfo">
+                      <p>Speakers</p>
+                    </div>
+                  </div>
+                  <div class="item-list">
+                    <div class="item-img">
+                      <a href="#">
+  
+                        <img src="Assets/img-6.webp" alt="Icon" />
+                      </a>
+                    </div>
+                    <div class="item-list-info catInfo">
+                      <p>Wired Headphone</p>
+                    </div>
+                  </div>
+                  <div class="item-list">
+                    <div class="item-img">
+                      <a href="#">
+  
+                        <img src="Assets/img-7.webp" alt="Icon" />
+                      </a>
+                    </div>
+                    <div class="item-list-info catInfo">
+                      <p>Wired Earphone</p>
+                    </div>
+                  </div>
+                  <div class="item-list">
+                    <div class="item-img">
+                      <a href="#">
+  
+                        <img src="Assets/img-8.webp" alt="Icon" />
+                      </a>
+                    </div>
+                    <div class="item-list-info catInfo">
+                      <p>Soundbars</p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="dropdown-item">
+                  <div class="item-list">
+                    <div class="item-img">
+                      <a href="#">
+                        <img src="Assets/img-20.webp" alt="Icon" />
+  
+                      </a>
+                    </div>
+                    <div class="item-list-info catInfo">
+                      <p> Pary Speakers</p>
+                    </div>
+                  </div>
+                  <div class="item-list">
+                    <div class="item-img">
+                      <a href="#">
+                        <img src="Assets/img-11.webp" alt="Icon" />
+  
+                      </a>
+                    </div>
+                    <div class="item-list-info catInfo">
+                      <p>Trimmers.</p>
+                    </div>
+                  </div>
+                  <div class="item-list">
+                    <div class="item-img">
+                      <a href="#">
+  
+                        <img src="Assets/img-12.webp" alt="Icon" />
+                      </a>
+                    </div>
+                    <div class="item-list-info catInfo">
+                      <p>Chargers</p>
+                    </div>
+                  </div>
+                  <div class="item-list">
+                    <div class="item-img">
+                      <a href="#">
+                        <img src="Assets/img-13.webp" alt="Icon" />
+  
+                      </a>
+                    </div>
+                    <div class="item-list-info catInfo">
+                      <p>Powerbank</p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="dropdown-item">
+                  <div class="item-list">
+                    <div class="item-img">
+                      <a href="#">
+                        <img src="Assets/img-14.webp" alt="Icon" />
+  
+                      </a>
+                    </div>
+                    <div class="item-list-info catInfo">
+                      <p>Cables</p>
+                    </div>
+                  </div>
+                  <div class="item-list">
+                    <div class="item-img">
+                      <a href="#">
+                        <img src="Assets/img-15.webp" alt="Icon" />
+  
+                      </a>
+                    </div>
+                    <div class="item-list-info catInfo">
+                      <p>Car Assessories</p>
+                    </div>
+                  </div>
+                  <div class="item-list">
+                    <div class="item-img">
+                      <a href="#">
+                        <img src="Assets/img-16.webp" alt="Icon" />
+  
+                      </a>
+                    </div>
+                    <div class="item-list-info catInfo">
+                      <p>Super Hero Collections</p>
+                    </div>
+                  </div>
+                  <div class="item-list">
+                    <div class="item-img">
+                      <a href="#">
+  
+                        <img src="Assets/limitedE.webp" alt="Icon" />
+                      </a>
+                    </div>
+                    <div class="item-list-info catInfo">
+                      <p>Limited Editions</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav_list">
+            <a href="dailyDeals.html" class="nav_link">
+              <span>Daily Deals</span>
+            </a>
+          </li>
+  
+          <li class="nav_list">
+            <a href="gift.html" class="nav_link">
+              <span>Gift With boAt</span>
+            </a>
+          </li>
+  
+          <li class="nav_list nav_list_menu">
+            <a href="#!" class="nav_link">
+              <span>More</span>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </a>
+            <div class="dropdown">
+              <div class="dropdown-inner">
+                <div class="dropdown-item">
+              
+                  <div class="item-list">
+                   
+                    <div class="item-list-info">
+                      <a href="https://www.boat-lifestyle.com/pages/dwfyb">
+  
+                        <p>Do What Flote Your BoAt</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item-list">
+                  
+                    <div class="item-list-info">
+                      <a href="#">
+                        <p>Blogs</p>
+  
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item-list">
+                    
+                    <div class="item-list-info">
+                      <a href="#">
+                        <p>Corporate Orders</p>
+  
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item-list">
+                  
+                    <div class="item-list-info">
+                      <a href="#">
+                        <p>Earn 100</p>
+  
+                      </a>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="dropdown-item">
+                  <div class="item-list">
+                    <div class="item-list-info">
+                      <a href="#">
+  
+                        <p>Careers</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item-list">
+                    <div class="item-list-info">
+                      <a href="#">
+                        <p>Social Responsibility</p>
+  
+                      </a>
+                    </div>
+                  </div>
+                
+                </div>
+  
+      
+              </div>
+            </div>
+          </li>
+  
+  
+  
+  
+        </ul>
+
+
+        <div class="wrapper">
+            <div class="search_wrap search_wrap_1">
+                <div class="search_item search_item_left">
+                        <div class="search_box">
+                          <input type="text" class="input_search" id="inpVal" placeholder="Search...">
+                        </div>
+                        <div class="icon">
+                          <ion-icon name="search" class="i" onclick="goTo()"></ion-icon>
+                        </div>
+                    </div>
+            
+              </div>
+        </div>
+  
+
+      
+        <div class="nav_action">
+          <a href="signin.html"> <img src="./Assets/profileicon.svg" alt="cart"></a>
+          <!-- <a href=""  onclick="showBoatCart()"> <img src="Assets/cart.svg" alt="profile"></a> -->
+          <button onclick="showBoatCart()" style="border: none;background-color: white;"> <img src="Assets/cart.svg" alt="profile"></button>
+          <div class="nav_toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Navbar end -->
+  
+
+
+
+
+
+
+
     <div class="container">
         <div class="innercontainer">
             <div class="prodDiv">
@@ -131,7 +825,7 @@
                 </div>
             </div>
             <div class='div5'>
-                <div class=div5box1">
+                <div class="div5box1">
                     <h1>
                         Insta Wake n’ Pair Technology
                     </h1>
@@ -146,72 +840,47 @@
             </div>
         </section>
         <div class="div8">
-            <img src="Page Images/bottom warranty.png" , style="width:100%; margin:auto;">
+            <img src="Assets/bottom warranty.png" , style="width:100%; margin:auto;">
         </div>
         </div>
     </section>
 
     <section id="FAQ">
-        <h1>FAQs</h1>
-        <div class="faq">
-            <h3>Q. How can we pause and play tracks on Immortal 121?
-                <span style="margin-left: 200px;"><img alt="down-arrow"
-                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/down-arrow.png?v=1611821970"
-                        style="width:15px"></span>
-            </h3>
-            <div class="faq-line"></div>
-        </div>
-        <div class="faq">
-            <h3>Q. Is Immortal 121 suitable for casual gaming?
-                <span style="margin-left: 260px;"><img alt="down-arrow"
-                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/down-arrow.png?v=1611821970"
-                        style="width:15px"></span>
-            </h3>
 
-            </h3>
-            <div class="faq-line"></div>
+        <div class="h1">
+            <h1>FAQ</h1>
         </div>
-        <div class="faq">
-            <h3>Q. Can we accept calls on Immortal 121 for team missions? <span style="margin-left: 174px;"><img
-                        alt="down-arrow"
-                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/down-arrow.png?v=1611821970"
-                        style="width:15px"></span></h3>
-            </h3>
-            <div class="faq-line"></div>
+        <div>
+            <h4>Q. Do wireless earbuds work with all phones? <br> <span class="ans">Yes, our wireless earbuds work with
+                    all phones with Bluetooth.
+                    boAt Airdopes connect instantly and give a seamless connection for the ultimate musical
+                    experience.</span></h4>
+            <h4>Q. What is the difference between wireless and truly wireless earbuds? <br> <span class="ans">Wireless
+                    earbuds
+                    are audio devices that connect to your Phone/Tablet/PC wirelessly, and the left and the right
+                    earpiece are connected via a wire. Truly wireless earbuds on the other hand have no wires at
+                    all.</span></h4>
+            <h4>Can wireless earbuds be used individually?<br> <span class="ans">Yes, wireless earphones can be used
+                    individually.
+                    With wireless earbuds, you can keep one in the case and one plugged in your ear and still use it to
+                    groove
+                    to your music.</span></h4>
+
+            <h4>How to know that wireless earbuds are fully charged?<br> <span class="ans">boAt Airdopes will have led
+                    indicators
+                    on the charging case to show if the battery is fully charged.
+                    The LED indicators on the wireless earbuds vary from model to model.
+                    Please refer to the manual of the earbuds in the respective packaging for precise
+                    instructions.</span></h4>
+
+            <h4>How long does earbuds’ battery last?<br> <span class="ans">boAt earbuds battery backup
+                    varies from model to model. It also gets affected by the volume at which you listen to music on
+                    your wireless earbuds. Please refer to the manual of the earbuds in the respective packaging for
+                    precise specifications.</span></h4>
         </div>
-        <div class="faq">
-            <h3>Q. Can I use any adapter to charge my device? <span style="margin-left: 259px;"><img alt="down-arrow"
-                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/down-arrow.png?v=1611821970"
-                        style="width:15px"></span></h3>
-            </h3>
-            <div class="faq-line"></div>
-        </div>
-        <div class="faq">
-            <h3>Q. Is Immortal 121 water splash and sweat resistant? <span style="margin-left: 218px;"><img
-                        alt="down-arrow"
-                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/down-arrow.png?v=1611821970"
-                        style="width:15px"></span></h3>
-            </h3>
-            <div class="faq-line"></div>
-        </div>
-        <div class="faq">
-            <h3>Q. How long does Immortal 121 last on a single charge? <span style="margin-left: 200px;"><img
-                        alt="down-arrow"
-                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/down-arrow.png?v=1611821970"
-                        style="width:15px"></span></h3>
-            </h3>
-            <div class="faq-line"></div>
         </div>
     </section>
 
-    <section>
-        <img src="Page Images/Review1.png" style="width: 100%; margin: auto;">
-        <img src="Page Images/Review3.png" style="width: 100%; margin: auto;">
-        <img src="Page Images/review2 copy.png" style="width: 100%; margin: auto;">
-
-    </section>
-
-    
     <section>
         <div class="blogtitle">
             <h3>bo<span class="A">A</span>t BLOGS</h3>
@@ -252,12 +921,229 @@
         </div>
     </section>
 
+
+
+
+    <br>
+
+    <!-- <footer> -->
+      <div id="first">
+        <div >
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt_logo.svg">
+            <h1>Subscribe to email alerts!</h1>
+            <form id="border">
+                <input id="Email" type="email" placeholder=  "  Enter your Email Address">
+                
+                <button><i class="fa-solid fa-arrow-right" ></i></button>
+            </form>    
+        </div>
+    
+       <div id="left">
+      <h5 class="menu-option">SHOP</h5>
+      <div class="menu-box">
+        <p class="menu-item" onclick="goToEarbuds()">True Wireless Earbuds</p>
+        <p class="menu-item" onclick="goToHeadphone()">Gaming Headphones</p>
+        <p class="menu-item">Wired Headphones</p>
+        <p class="menu-item">Wireless Speakers</p>
+        <p class="menu-item">Home Audio</p>
+        <p class="menu-item">Mobile Accessories</p>
+        <p class="menu-item" onclick="goToWatch()">Smart Watches</p>
+        <p class="menu-item">TRebel</p>
+        <p class="menu-item">Misfit</p>
+        <p class="menu-item">Gift Card</p>
+        <p class="menu-item">Rock In India</p>
+        <p class="menu-item">Earn Rs.100</p>
+      </div>
+    </div>
+    
+    <div id="help">
+      <h5 class="menu-option">HELP</h5>
+      <div class="menu-box">
+        <p class="menu-item">Track Your Order</p>
+        <p class="menu-item">Warranty & Support</p>
+        <p class="menu-item">Return Policy</p>
+        <p class="menu-item">Service Centers</p>
+        <p class="menu-item">Bulk Orders</p>
+        <p class="menu-item">FAQs</p>
+        <p class="menu-item">Why Buy Direct</p>
+      </div>
+    </div>
+    
+    <div id="company">
+      <h5 class="menu-option">COMPANY</h5>
+      <div class="menu-box">
+        <p class="menu-item">About boAt</p>
+        <p class="menu-item">News</p>
+        <p class="menu-item">Read Our Blog</p>
+        <p class="menu-item">Careers</p>
+        <p class="menu-item">Security</p>
+        <p class="menu-item">Terms of Service</p>
+        <p class="menu-item">Privacy Policy</p>
+        <p class="menu-item">Investor Relations</p>
+      </div>
+    </div>
+    
+    
+        </div>
+    
+    
+    
+    
+    <div class="lowestdiv lowestdivBox" >
+        <div id="card">
+           
+            <div id="second">
+                <div>
+                    <h3>Let's go social:</h3>
+                </div>
+                <div class = "social">
+                  <i class="fa fa-facebook"></i>
+                </div>
+                <div class = "social"><i class="fa fa-twitter"></i> </div>
+                <div class = "social"><i class="fa fa-instagram"></i></div>
+                <div class = "social"><i class="fa fa-youtube-play"></i></i></div>
+                <div class = "social"><i class="fa fa-linkedin"></i></div>
+            </div>
+           
+          
+        </div>
+        <div id="rights">
+            <p>© 2023 Imagine Marketing Limited. All Rights Reserved.</p>
+            <p>For queries contact us: Manager, Imagine Marketing Limited Unit no. 204 & 205, 2nd floor, D-wing & E-wing, <br>
+                Corporate Avenue, Andheri Ghatkopar Link Road, Mumbai, Maharashtra-400093, India</p>
+        </div>
+    </div>
+    <!-- </footer> -->
+
+
+
+
+
+    
+
+<!-- cart start -->
+
+
+<div class="boatcart boaatoverlay"></div>
+<div class="boatcart boaatcartdiv" id="boaatcartdiv">
+<div class="boaatcartinnerdiv">
+<div class="parent">
+<div style="display: flex; justify-content: space-between;">
+  <div style="display: flex; ">
+    <h3 style="margin: 15px 0px 0px 20px ;font-size: 20px; color: #1a2024;">Your Cart<span id="per"></span></h3>
+  </div>
+  <div>
+    <div style="padding: 18px 10px;">
+      <a href="#" style="color: #1a2024; font-size: 14px; text-decoration: none; font-weight: bold;"></a>
+    </div>
+  </div>
+  <div class="closed-cart" style="margin-top: 3%;">
+    <ion-icon name="close-outline" style="font-size: 40px;"  onclick="window.location.reload()"></ion-icon>
+  </div>
+</div>
+
+</div>
+
+<div id="child">
+<svg style="margin-top: 45%;" xmlns:xlink="http://www.w3.org/1999/xlink" class="mb-3" xmlns="http://www.w3.org/2000/svg" width="170.552" height="136.308" viewBox="0 0 170.552 136.308">
+  <g id="Group_336574" data-name="Group 336574" transform="translate(17193 11237.99)">
+    <path id="Path_343371" data-name="Path 343371" d="M871.2,2847.773a58.712,58.712,0,1,0-58.6-58.712A58.622,58.622,0,0,0,871.2,2847.773Z" transform="translate(-17982.947 -13949.455)" fill="#D0D9DE"></path>
+    <path id="Path_343372" data-name="Path 343372" d="M911.339,2749.127a4.739,4.739,0,1,0-4.739-4.739A4.742,4.742,0,0,0,911.339,2749.127Z" transform="translate(-17968.309 -13948.007)" fill="#D0D9DE"></path>
+    <path id="Path_343373" data-name="Path 343373" d="M917.136,2732.722a3.236,3.236,0,1,0-3.236-3.236A3.241,3.241,0,0,0,917.136,2732.722Z" transform="translate(-17967.172 -13950.094)" fill="#D0D9DE"></path>
+    <path id="Path_343374" data-name="Path 343374" d="M815.736,2748.622a3.236,3.236,0,1,0-3.236-3.236A3.241,3.241,0,0,0,815.736,2748.622Z" transform="translate(-17982.963 -13947.617)" fill="#D0D9DE"></path>
+    <path id="Path_343375" data-name="Path 343375" d="M799.01,2803.37a6.01,6.01,0,1,0-6.01-6.01A6.011,6.011,0,0,0,799.01,2803.37Z" transform="translate(-17986 -13939.955)" fill="#D0D9DE"></path>
+    <path id="Path_343376" data-name="Path 343376" d="M942.777,2765.972h-5.734v-5.732h-4.915v5.732h-5.734v5.074h5.734v5.732h4.915v-5.732h5.734Z" transform="translate(-17965.225 -13944.8)" fill="#B2B9BF"></path>
+    <path id="Path_343377" data-name="Path 343377" d="M860.355,2718.91h-4.9v-4.9h-4.2v4.9h-4.9v4.346h4.9v4.9h4.2v-4.9h4.9Z" transform="translate(-17977.691 -13952)" fill="#B2B9BF"></path>
+    <path id="Path_343378" data-name="Path 343378" d="M810.165,2761.124h-4.187v-4.184h-3.59v4.184H798.2v3.71h4.188v4.184h3.59v-4.184h4.187Z" transform="translate(-17985.189 -13945.314)" fill="#B2B9BF"></path>
+    <g id="Group_336552" data-name="Group 336552" transform="translate(-17159.609 -11206.963)">
+      <path id="Path_272" data-name="Path 272" d="M910.967,2776.1l-11.572-28.258a11.213,11.213,0,0,0-12.74-6.726l-29.875,6.46a9.066,9.066,0,0,0-5.921,4.484l-28.439,54.181a4.642,4.642,0,0,0,1.974,6.288l51.5,27.09a4.631,4.631,0,0,0,6.28-1.976l28.439-54.181A8.475,8.475,0,0,0,910.967,2776.1Zm-28.618-11.4a7.505,7.505,0,1,1,10.138-3.132A7.443,7.443,0,0,1,882.349,2764.7Z" transform="translate(-821.891 -2740.856)" fill="#FFFFFF"></path>
+    </g>
+    <path id="Path_343379" data-name="Path 343379" d="M878.3,2761.03c23.415-12.112,32.655-30.153,20.454-37.955s-24.222,0-27.273,22.7" transform="translate(-17973.777 -13951.045)" fill="none" stroke="#9CA4B5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="5px"></path>
+    <path id="Path_343380" data-name="Path 343380" d="M872.335,2790.187a3.362,3.362,0,1,0-1.313-4.565A3.256,3.256,0,0,0,872.335,2790.187Z" transform="translate(-17973.92 -13941.115)" fill="#B2B9BF"></path>
+    <path id="Path_343381" data-name="Path 343381" d="M865.964,2794.1l-1.47-.809a5.927,5.927,0,0,0-5.813-6.322,5.493,5.493,0,0,0-3.691,1.063l-1.47-.821a7.518,7.518,0,0,1,12.445,6.888Z" transform="translate(-17976.574 -13940.891)" fill="#B2B9BF"></path>
+    <path id="Path_343382" data-name="Path 343382" d="M852.746,2779.346a3.362,3.362,0,1,0-1.314-4.565A3.42,3.42,0,0,0,852.746,2779.346Z" transform="translate(-17976.959 -13942.803)" fill="#B2B9BF"></path>
+  </g>
+</svg>
+<div style="color:  #1a2024; font-weight: bold; font-size: 20px; margin-top: 3%;">Your cart is empty</div>
+
+<div>
+  <button onclick="showBoatCart()"
+    style="cursor: pointer; padding: 15px 30px; border-radius: 10px; border: 1px solid #1a2024;  margin-top: 10%; background-color:#1a2024; color: white; font-size: 16px; font-weight: bold;">Start
+    Shopping</button>
+</div>
+</div>
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<img id="pngImage" style="margin-top: 10px;" src="gst.png" alt="">
+<div id="bagItems"></div>
+
+<div id="grandTotalParent">
+<img src="cards.png" alt="">
+<hr>
+<div id="gandTotal">
+  <div>
+    <div style="color: black; font-weight: bold; font-size: 20px;">₹<span id="grandTotalPrice">0</span> </div>
+    <div style="color: rgb(0, 19, 37); font-size: 12px;"> Total amount <i class="fa fa-info-circle"></i></div>
+  </div>
+
+  <div>
+   <a href="Address.html" style="text-decoration: none; color: white; "> <button style="cursor: pointer;width: 210px;border-radius: 5px; padding-left: 43px; height: 50px; border: 1px solid #1a2024; background-color: #1a2024; font-size: 16px; font-weight: bold; display: flex;
+    align-items: center"> Confirm Order <div style="padding: 0 0 0 50px;display: inline-block;"></a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- cart end -->
+
+
+<!-- common links start -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="JS/Navbar.js"></script>
+  
+<script src="JS/cart.js"></script>
+
+
+<!-- common links end -->
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
 
+<script src="JS/airdopes121.js"></script> 
 
-<script src="boAtImmortal121.js"></script>
+<script src="JS/boAtImmortal121.js"></script>
 </body>
 
 </html>
+<script src="./JS/signin.js"></script>
+
+<!-- common links start -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="./JS/cart.js"></script>
+<script src="./JS/footer.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+<script src="https://kit.fontawesome.com/18520a5243.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="JS/Navbar.js"></script>
+<script src="https://kit.fontawesome.com/18520a5243.js" crossorigin="anonymous"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
